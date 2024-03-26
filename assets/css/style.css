@@ -1,0 +1,1310 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header_section {
+    background-color: #171921;
+}
+
+/* .manage_container {
+    padding: 0 350px;
+} */
+
+.navbar_brand {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar_brand img {
+    width: auto;
+    height: 50px;
+}
+
+.navbar_section {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* height: 76px; */
+    padding: 13px 0;
+    /* height: 100px - 76px; */
+    background-color: #171921;
+    z-index: 99;
+}
+
+.navLink {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: center;
+    color: #FFFFFF !important;
+    padding: 0;
+    padding-right: 0;
+    display: inline-block;
+}
+
+.navUl {
+    gap: 33px;
+    padding-left: 80px;
+}
+
+.join_momentBtn {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.25px;
+    text-align: left;
+    border: 2px solid #51D5C1;
+    border-radius: 57px;
+    background: none;
+    color: #FFFFFF;
+    padding: 9px 12px 9px 12px;
+}
+
+.join_momentBtn:hover {
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+}
+
+.navLink:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #51D5C1;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.navLink:hover:after {
+    transform: scaleX(1);
+}
+
+.navbar-close-btn {
+    display: none;
+    /* Initially hide the close button */
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    /* Adjust the color as needed */
+    font-size: 1.5rem;
+    /* margin-left: auto; */
+    /* Move the button to the right */
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+
+}
+
+.sidebarLogo {
+    display: none;
+}
+
+.sidebarLogo img {
+    width: auto;
+    height: 50px;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../images/menu.png);
+}
+
+.header_title_div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 75px;
+    position: relative;
+    z-index: 9;
+}
+
+.header_title_div h1 {
+    font-family: 'Inter';
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 53.25px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.header_title_div p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: #A2A3A6;
+}
+
+.home_section_one {
+    margin-top: 76px;
+    padding: 16px 0 50px 0;
+    position: relative;
+}
+
+.joinBtn {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.25px;
+    text-align: left;
+    color: #FFFFFF;
+    border: 2px solid #51D5C1;
+    padding: 9px 12px 9px 12px;
+    border-radius: 57px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    max-width: 141px;
+}
+
+.joinBtn:hover {
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+}
+
+.earthImgSection {
+    position: relative;
+    z-index: 9;
+}
+
+.earthImgSection img {
+    width: 88%;
+}
+
+.transparentCard {
+    background: linear-gradient(130.3deg, rgba(23, 25, 33, 0.4) 24.82%, rgba(23, 25, 33, 0.2) 100%);
+    border: 1px solid #20222A;
+    width: 100%;
+    width: 200px;
+    height: auto;
+    min-height: 119.59px;
+    border-radius: 10px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 5px 5px 20px;
+}
+
+.transparentCard h6 {
+    font-family: 'Archivo';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41.6px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.transparentCard p {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.08699999749660492px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.earthImgSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transparentCardDiv {
+    position: absolute;
+}
+
+.transparentCard02 {
+    background: linear-gradient(120.71deg, rgba(81, 213, 193, 0.2) 24.82%, rgba(81, 213, 193, 0) 100%);
+}
+
+.row_one {
+    display: flex;
+    gap: 10px;
+}
+
+.row_two {
+    margin-top: 10px;
+}
+
+.shadowDiv {
+    background: radial-gradient(63.32% 56.53% at 50% 64.29%, #2F3343 0%, #171921 100%);
+    height: auto;
+    min-height: 120.87px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.home_section_two {
+    border: 1px solid #D1D1D3;
+    border-radius: 12px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.table_header_div {
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D9D9D6;
+}
+
+.table_header_div h2 {
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: #222223;
+    margin-bottom: 0;
+}
+
+.public_audits_btn {
+    border: 2px solid #51D5C1;
+    border-radius: 57px;
+    padding: 10px 15px;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.25px;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 179px;
+}
+
+.public_audits_btn i {
+    color: #51D5C1;
+}
+
+.theadTr01 p {
+    padding-left: 30px;
+}
+
+.theadTrLast p {
+    padding-right: 30px;
+}
+
+.theadTr th p {
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 16px;
+    /* text-align: center; */
+    color: #000000DE;
+}
+
+.theadTr th {
+    padding: 1.5rem .5rem;
+}
+
+.coinDiv {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 30px;
+}
+
+.coinLogo {
+    width: auto;
+    height: 32px;
+}
+
+.tableDesc {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #000000DE;
+    margin-bottom: 0;
+    padding-top: 8px;
+}
+
+.platform_content {
+    display: flex;
+    gap: 5px;
+}
+
+.platform_content p {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #222223;
+    padding: 10px 10px;
+    background-color: #51D5C14D;
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+
+.tbodyTr td {
+    padding: 1rem .5rem;
+}
+
+/* .table_main_div{
+    margin-bottom: 0;
+} */
+.tbodyTr:last-child {
+    border: none;
+    border-style: none !important;
+    border-color: #FFFFFF;
+}
+
+.coinDiv p {
+    padding-top: 0 !important;
+}
+
+.home_section_three {
+    margin-top: 4rem;
+}
+
+.hacker_content_div {
+    width: 100%;
+    max-width: 503px;
+}
+
+.hacker_content_div h3 {
+    /* margin-bottom: 0; */
+    font-family: 'Inter';
+    font-size: 66px;
+    font-weight: 500;
+    line-height: 98.34px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.hacker_content_div h3 span {
+    color: #51D5C1;
+    font-weight: 600;
+}
+
+.hacker_content_div p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 19px; */
+    text-align: left;
+    color: #000000;
+}
+
+.audit_card {
+    border: 0.99px solid #D1D1D3;
+    background-color: #FFFFFF;
+    border-radius: 11.88px;
+    padding: 16.83px 16.83px;
+}
+
+.audit_card h6 {
+    font-family: 'Inter';
+    font-size: 13.86px;
+    font-weight: 600;
+    line-height: 19.8px;
+    letter-spacing: -0.08612999320030212px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #171921;
+}
+
+.audit_company_name {
+    background: #51D5C133;
+    border-radius: 11.88px;
+    padding: 11.88px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company_logo img {
+    border-radius: 50%;
+    width: 23.76px;
+    height: 23.76px;
+}
+
+.company_logo p {
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-size: 11.88px;
+    font-weight: 400;
+    line-height: 15.84px;
+    text-align: left;
+    color: #171921;
+}
+
+.company_logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.count_p {
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-size: 11.88px;
+    font-weight: 400;
+    line-height: 15.84px;
+    text-align: left;
+    color: #171921;
+}
+
+.home_section_four {
+    margin: 50px 0;
+}
+
+.home_section_four img {
+    width: 100%;
+}
+
+.contract_card {
+    min-height: 320px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #D1D1D3;
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contract_card h6 {
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 51.6px;
+    text-align: left;
+    color: #222223;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.contract_card p {
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    width: 100%;
+    max-width: 424px;
+    height: auto;
+    min-height: 100px;
+}
+
+/* .contract_card_logo */
+.contract_card_logo02 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contract_card_logo02 h6 {
+    margin-top: 0;
+}
+
+.contract_card02 {
+    height: auto;
+    min-height: 152px;
+    justify-content: center;
+}
+
+.contract_card_logo img {
+    width: auto;
+    height: 46px;
+}
+
+.blogDiv {
+    padding: 0 !important;
+    border: none;
+}
+
+.home_section_six {
+    margin: 50px 0;
+}
+
+.home_blog_card {
+    border: 1px solid #D1D1D3;
+    border-radius: 12px;
+    height: auto;
+    min-height: 194px;
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.home_mini_blog_card {
+    border: 1px solid #D1D1D3;
+    border-radius: 12px;
+    height: auto;
+    min-height: 85px;
+    padding: 15px 15px;
+}
+
+.learn_more_div h6 {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.3330000042915344px;
+    text-align: left;
+    color: #171921;
+    margin-bottom: 0;
+}
+
+.learn_more_div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.learn_more_div a {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.08699999749660492px;
+    text-align: left;
+    color: #E5453D;
+    text-decoration: none;
+}
+
+.learn_more_div a i {
+    font-size: 17px;
+    position: relative;
+    top: 3px;
+}
+
+.learn_more_main_div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.learn_more_main_div img {
+    width: auto;
+    height: 112px;
+}
+
+.learn_more_main_div p {
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.08699999749660492px;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.home_mini_blog_card {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.home_mini_blog_card h5 {
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.08699999749660492px;
+    text-align: left;
+    width: 100%;
+    max-width: 110px;
+}
+
+.home_mini_blog_card img {
+    width: auto;
+    height: 48px;
+}
+
+.footer_section {
+    background-color: #171921;
+    padding: 0 0 20px 0;
+}
+
+.footer_logo img {
+    width: auto;
+    height: 87px;
+}
+
+.footer_logo p {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.08699999749660492px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+.footer_link h6 {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.08699999749660492px;
+    text-align: left;
+    color: #E8E8E9;
+    margin-bottom: 1rem;
+}
+
+.footer_link a {
+    text-decoration: none;
+    display: block;
+    width: max-content;
+}
+
+.footer_link a p {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.08699999749660492px;
+    text-align: left;
+    color: #A7A7AB;
+}
+
+.copyRightTxt {
+    display: none;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.08699999749660492px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.build_trust_txt {
+    font-family: 'Inter';
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 67.77px;
+    text-align: left;
+    color: #222223;
+}
+
+.build_trust_txt span {
+    color: #51D5C1;
+}
+
+.essential_div {
+    margin: 70px 0;
+}
+
+.essential_txt {
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    text-align: center;
+    color: #222223;
+    width: 100%;
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+.essential_txt span {
+    color: #51D5C1;
+}
+
+.price_card {
+    border: 1px solid #D1D1D3;
+    padding: 15px 20px;
+    border-radius: 12px;
+    height: auto;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price_card h6 {
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 51.6px;
+    text-align: left;
+    color: #00d7c3;
+}
+
+.price_card p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 51.6px;
+    text-align: left;
+    color: #222223;
+    margin-bottom: 0;
+}
+
+.smart_contract_section {
+    margin: 50px 0;
+    background-color: #eefbf9;
+    padding: 50px 0 70px 0;
+}
+
+.need_project {
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    text-align: left;
+    column-gap: normal;
+    color: #222223;
+}
+
+.need_project span {
+    color: #51D5C1;
+}
+
+.needCard {
+    padding: 20px 15px;
+    border: 1px solid #D1D1D3;
+    height: auto;
+    min-height: 119px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: start;
+}
+
+.needCard img {
+    width: auto;
+    height: 40px;
+}
+
+.needCard p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    color: #222223;
+    margin-bottom: 0;
+}
+
+.smart_contract_section_two {
+    margin: 50px 0;
+}
+
+.ever_app_card {
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+}
+
+/* .ever_app_card h6 {
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 51.6px;
+    text-align: left;
+    color: #171921;
+} */
+.blockchain_section{
+    margin: 90px 0;
+}
+.blockchain_text {
+    width: 100%;
+    max-width: 588px;
+}
+
+.blockchain_text span {
+    color: #51D5C1;
+}
+.language_img{
+    width: 100%;
+    margin-top: 3rem;
+}
+.benifts_section{
+    margin: 70px 0;
+}
+@media screen and (max-width:1400px) {
+    .needCard p {
+        font-size: 15px;
+    }
+
+    .learn_more_div h6 {
+        font-size: 18px;
+    }
+
+    .learn_more_div a {
+        font-size: 13px;
+    }
+
+    .contract_card h6 {
+        font-size: 32px;
+    }
+
+    .header_title_div h1 {
+        font-size: 41px;
+    }
+
+    .header_title_div p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .build_trust_txt {
+        font-size: 53px;
+    }
+
+    .essential_txt {
+        font-size: 44px;
+    }
+
+    .price_card p {
+        font-size: 14px;
+        line-height: 43.6px;
+    }
+
+    .price_card h6 {
+        font-size: 36px;
+    }
+
+    .need_project {
+        font-size: 44px;
+    }
+
+    .needCard p {
+        font-size: 12px;
+    }
+
+    .learn_more_main_div img {
+        height: 100px;
+    }
+
+    .learn_more_main_div {
+        gap: 15px;
+    }
+
+    .learn_more_div h6 {
+        font-size: 16px;
+    }
+
+    .learn_more_main_div p {
+        font-size: 12px;
+    }
+
+    .home_mini_blog_card h5 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .home_mini_blog_card {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .home_mini_blog_card {
+        min-height: 75px;
+        padding: 10px 10px;
+    }
+
+    .home_blog_card {
+        min-height: 174px;
+        padding: 15px 12px;
+    }
+
+    .contract_card h6 {
+        font-size: 31px;
+        line-height: 41px;
+    }
+
+    .contract_card {
+        padding: 30px 30px;
+    }
+
+    .table_main_div {
+        overflow-x: scroll;
+    }
+
+    .table_main_div::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .table_main_div::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .table_main_div::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    .table_main_div .theadTr th p {
+        width: 100%;
+        min-width: 270px;
+    }
+
+    .table_main_div::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .projectType p {
+        min-width: 450px !important;
+    }
+
+    .header_title_div h1 {
+        font-size: 34px;
+        line-height: 44.25px;
+    }
+
+    .header_title_div p {
+        font-size: 13px;
+    }
+
+    .navUl {
+        gap: 30px;
+        padding-left: 70px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .build_trust_txt {
+        font-size: 45px;
+        line-height: 52.77px;
+    }
+
+    .essential_txt {
+        font-size: 38px;
+        line-height: 50.09px;
+        max-width: 662px;
+    }
+
+    .price_card p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .price_card h6 {
+        font-size: 31px;
+    }
+
+    .price_card {
+        min-height: 137px;
+    }
+
+    .need_project {
+        font-size: 38px;
+        line-height: 50.09px;
+        text-align: center;
+    }
+
+    .smart_contract_section {
+        padding: 30px 0 60px 0;
+    }
+
+    .copyRightTxt {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .footerdesc01 {
+        display: none;
+    }
+
+    .footer_logo img {
+        height: 75px;
+    }
+
+    .contract_card {
+        min-height: 310px;
+    }
+
+    .contract_card02 {
+        min-height: 142px !important;
+    }
+
+    .contract_card h6 {
+        font-size: 25px;
+        line-height: 33.6px;
+    }
+
+    .contract_card p {
+        font-size: 14px;
+        max-width: 400px;
+        min-height: 90px;
+    }
+
+    .contract_card {
+        padding: 25px 20px;
+    }
+
+    .header_title_div {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
+        max-width: 507px;
+    }
+
+    .sidebarLogo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .navbar-close-btn {
+        display: block;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #171921;
+        z-index: 1000;
+        transition: left 0.5s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+    }
+
+    .navUl {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 20px;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .navBtnDiv {
+        /* width: calc(100% - 40px); */
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .build_trust_txt {
+        font-size: 37px;
+        line-height: 48.77px;
+        text-align: center;
+    }
+
+    .needCard {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .build_trust_txt {
+        font-size: 30px;
+        line-height: 39.77px;
+    }
+
+    .need_project {
+        font-size: 30px;
+        line-height: 39.09px;
+    }
+
+    .essential_txt {
+        font-size: 30px;
+        line-height: 39.09px;
+    }
+
+    .smart_contract_section_two {
+        margin: 40px 0;
+    }
+
+    .essential_div {
+        margin: 40px 0;
+    }
+
+    .smart_contract_section {
+        padding: 10px 0 40px 0;
+        margin: 40px 0;
+    }
+
+    .ever_app_card h6 {
+        text-align: center;
+    }
+
+    .earthImgSection img {
+        width: 100%;
+    }
+
+    .contract_card_logo02 {
+        gap: 15px;
+    }
+
+    .footer_logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer_link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blogDiv {
+        flex-direction: row !important;
+    }
+
+    .home_section_six {
+        margin: 40px 0;
+    }
+
+    .learn_more_main_div {
+        flex-direction: column;
+    }
+
+    .learn_more_div {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .learn_more_main_div p {
+        text-align: center;
+    }
+
+    .home_blog_card {
+        padding: 25px 12px;
+    }
+
+    .contract_card h6 {
+        font-size: 22px;
+        line-height: 33.6px;
+    }
+
+    .price_card h6 {
+        font-size: 26px;
+        line-height: 39.6px;
+    }
+
+    .contract_card {
+        min-height: 280px;
+    }
+
+    .home_section_one {
+        margin-top: 74px;
+
+    }
+
+    .header_title_div h1 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    .header_title_div {
+        padding-top: 14px;
+        padding-bottom: 30px;
+    }
+
+    .home_section_four {
+        margin: 40px 0;
+    }
+
+    .transparentCard {
+        width: 100%;
+        padding: 5px 5px 5px 10px;
+    }
+
+    .transparentCard h6 {
+        font-family: 'Archivo';
+        font-size: 26px;
+    }
+
+    .table_header_div h2 {
+        font-size: 24px;
+    }
+
+    .transparentCard p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .contract_card02 {
+        min-height: 120px !important;
+    }
+
+    .hacker_content_div h3 {
+        font-size: 44px;
+        line-height: normal;
+    }
+
+    .table_header_div {
+        padding: 15px 20px;
+        flex-direction: column;
+    }
+
+    .hacker_content_div p {
+        font-size: 14px;
+    }
+
+    .public_audits_btn {
+        padding: 8px 13px;
+        max-width: 170px;
+    }
+
+    .home_section_two {
+        margin-top: 40px;
+    }
+
+    .home_section_three {
+        margin-top: 10px;
+    }
+
+    .theadTr01 p {
+        padding-left: 20px;
+    }
+
+    .theadTrLast p {
+        padding-right: 20px;
+    }
+
+    .coinDiv {
+        gap: 10px;
+        padding-left: 20px;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .navbar_section {
+        padding: 12px 0;
+    }
+}

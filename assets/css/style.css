@@ -259,6 +259,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #D9D9D6;
+    gap: 10px;
 }
 
 .table_header_div h2 {
@@ -488,7 +489,7 @@
 
 .contract_card h6 {
     font-family: 'Inter';
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 600;
     line-height: 51.6px;
     text-align: left;
@@ -641,6 +642,7 @@
 .footer_section {
     background-color: #171921;
     padding: 0 0 20px 0;
+    margin-top: 6rem;
 }
 
 .footer_logo img {
@@ -687,6 +689,10 @@
     color: #A7A7AB;
 }
 
+.footer_link a p:hover {
+    color: #FFFFFF;
+}
+
 .copyRightTxt {
     display: none;
     font-family: 'Inter';
@@ -707,6 +713,8 @@
     line-height: 67.77px;
     text-align: left;
     color: #222223;
+    width: 100%;
+    max-width: 494px;
 }
 
 .build_trust_txt span {
@@ -714,7 +722,7 @@
 }
 
 .essential_div {
-    margin: 70px 0;
+    margin: 100px 0;
 }
 
 .essential_txt {
@@ -757,14 +765,13 @@
     font-family: 'Inter';
     font-size: 16px;
     font-weight: 400;
-    line-height: 51.6px;
+    /* line-height: 51.6px; */
     text-align: left;
     color: #222223;
     margin-bottom: 0;
 }
 
 .smart_contract_section {
-    margin: 50px 0;
     background-color: #eefbf9;
     padding: 50px 0 70px 0;
 }
@@ -777,6 +784,8 @@
     text-align: left;
     column-gap: normal;
     color: #222223;
+    width: 100%;
+    max-width: 425px;
 }
 
 .need_project span {
@@ -811,9 +820,6 @@
     margin-bottom: 0;
 }
 
-.smart_contract_section_two {
-    margin: 50px 0;
-}
 
 .ever_app_card {
     border: none;
@@ -830,9 +836,8 @@
     text-align: left;
     color: #171921;
 } */
-.blockchain_section{
-    margin: 90px 0;
-}
+
+
 .blockchain_text {
     width: 100%;
     max-width: 588px;
@@ -841,14 +846,215 @@
 .blockchain_text span {
     color: #51D5C1;
 }
-.language_img{
+
+.language_img {
     width: 100%;
     margin-top: 3rem;
 }
-.benifts_section{
-    margin: 70px 0;
+
+
+
+.it_work_section {
+    padding: 50px 30px;
+    border: 1px solid #51D5C1;
+    border-radius: 20px;
+}
+
+.it_work_content {
+    width: 100%;
+    max-width: 427px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    height: 100%;
+}
+
+.it_work_content h3 {
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    color: #222223;
+}
+
+.it_work_content h3 span {
+    color: #51D5C1;
+}
+
+.it_work_content p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    color: #222223;
+}
+
+.count_nmb {
+    border: 1.6px solid #51D5C1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.count_nmb li {
+    list-style: none;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 41.28px;
+    color: #51D5C1;
+}
+
+.line_div {
+    width: 1.6px;
+    height: 30px;
+    background-color: #51D5C1;
+}
+
+.count_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 45px;
+}
+
+.get_quote_col {
+    display: flex;
+    gap: 30px;
+}
+
+.quote_text_div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.quote_text_div h6 {
+    height: auto;
+    min-height: 39px;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+    /* line-height: 51.6px; */
+    text-align: left;
+    margin-bottom: 0;
+    color: #222223;
+    display: flex;
+    align-items: center;
+}
+
+.margin_row {
+    margin: 100px 0 !important;
+}
+
+.quote_text_div02 {
+    gap: 35px;
+}
+
+.faq_text {
+    font-family: 'Inter';
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 96.82px;
+    text-align: left;
+    color: #222223;
+}
+
+.accordionButton {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: left;
+    color: #222223 !important;
+    background: none !important;
+    padding: 16px 16px;
+    --bs-accordion-btn-icon-width: 14px;
+    border-top: 2px solid #eaedef;
+    border-radius: 0 !important;
+}
+
+.accordionButton:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none !important;
+    border-radius: 0 !important;
+
+}
+
+.accordion-item:last-child {
+    border-bottom: 2px solid #eaedef !important;
+}
+
+.accordion-body {
+    padding: 10px 16px 20px 16px;
+}
+
+.accordion-body p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: #3C3C43D9;
+    margin-bottom: 0;
+}
+
+.accordionButton:not(.collapsed)::after {
+    background-image: url(../images/xmark.svg);
+}
+
+.accordionButton::after {
+    background-image: url(../images/plus.svg);
+}
+
+.accordionButton:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+.request_title {
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #222223;
+    width: 100;
+    max-width: 757px;
+
+}
+.request_title span{
+    color: #51D5C1;
+}
+.professional_request_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.testing_card{
+    height: auto;
+    min-height: 250px !important;
 }
 @media screen and (max-width:1400px) {
+    .request_title {
+        font-size: 44px;
+        line-height: 56.09px;
+    }    
+    .margin_row {
+        margin: 80px 0 !important;
+    }
+
     .needCard p {
         font-size: 15px;
     }
@@ -875,6 +1081,37 @@
 }
 
 @media screen and (max-width : 1200px) {
+    .request_title {
+        font-size: 40px;
+        line-height: 51.09px;
+        max-width: 645px;
+    }
+    .faq_text {
+        font-size: 69px;
+        line-height: normal;
+    }
+
+    .it_work_content h3 {
+        font-size: 44px;
+    }
+
+    .it_work_content p {
+        font-size: 14px;
+    }
+
+    .it_work_content {
+        max-width: 408px;
+    }
+
+    .get_quote_col {
+        gap: 25px;
+    }
+
+    .quote_text_div h6 {
+        font-size: 18px;
+        min-height: 40px;
+    }
+
     .build_trust_txt {
         font-size: 53px;
     }
@@ -885,7 +1122,7 @@
 
     .price_card p {
         font-size: 14px;
-        line-height: 43.6px;
+        /* line-height: 43.6px; */
     }
 
     .price_card h6 {
@@ -991,6 +1228,46 @@
 }
 
 @media screen and (max-width: 992px) {
+    .request_title {
+        font-size: 37px;
+        line-height: 47.09px;
+        max-width: 645px;
+    }
+    .faq_text {
+        font-size: 60px;
+    }
+
+    .accordionButton {
+        font-size: 16px;
+    }
+
+    .margin_row {
+        margin-top: 70px !important;
+    }
+
+    .it_work_content h3 {
+        font-size: 38px;
+        line-height: 51.09px;
+    }
+
+    .it_work_content {
+        max-width: 372px;
+        gap: 17px;
+    }
+
+    .quote_text_div h6 {
+        font-size: 16px;
+        min-height: 40px;
+    }
+
+    .count_nmb li {
+        font-size: 14px;
+    }
+
+    .get_quote_col {
+        gap: 20px;
+    }
+
     .build_trust_txt {
         font-size: 45px;
         line-height: 52.77px;
@@ -1004,7 +1281,7 @@
 
     .price_card p {
         font-size: 14px;
-        line-height: 21px;
+        /* line-height: 21px; */
     }
 
     .price_card h6 {
@@ -1019,6 +1296,7 @@
         font-size: 38px;
         line-height: 50.09px;
         text-align: center;
+        max-width: 100%;
     }
 
     .smart_contract_section {
@@ -1114,6 +1392,50 @@
 }
 
 @media screen and (max-width : 768px) {
+    .request_title {
+        font-size: 36px;
+        line-height: 43.09px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .professional_request_div{
+        flex-direction: column;
+    }
+    .faq_text {
+        font-size: 55px;
+    }
+
+    .accordion-body {
+        padding: 11px 16px;
+    }
+
+    .accordion-body p {
+        font-size: 14px;
+    }
+
+    .margin_row {
+        margin-top: 50px !important;
+    }
+
+    .risks_row {
+        margin-top: 50px;
+    }
+
+    .get_quote_col {
+        gap: 18px;
+        margin-top: 3rem;
+    }
+
+    .quote_text_div02 {
+        margin-top: 3rem;
+        gap: 30px;
+    }
+
+    .it_work_section {
+        margin: 70px 0;
+        padding: 40px 25px;
+    }
+
     .build_trust_txt {
         font-size: 37px;
         line-height: 48.77px;
@@ -1126,6 +1448,36 @@
 }
 
 @media screen and (max-width : 576px) {
+    .request_title {
+        font-size: 30px;
+        line-height: 37.09px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .faq_text {
+        font-size: 50px;
+    }
+
+    .it_work_section {
+        padding: 35px 20px;
+    }
+
+    .accordion-body {
+        padding: 6px 10px 12px 10px;
+    }
+
+    .accordionButton {
+        font-size: 14px;
+        padding: 12px 10px;
+        --bs-accordion-btn-icon-width: 12px;
+
+    }
+
+    .accordion-body p {
+        font-size: 12px;
+        line-height: 20.4px;
+    }
+
     .build_trust_txt {
         font-size: 30px;
         line-height: 39.77px;
@@ -1141,9 +1493,6 @@
         line-height: 39.09px;
     }
 
-    .smart_contract_section_two {
-        margin: 40px 0;
-    }
 
     .essential_div {
         margin: 40px 0;
@@ -1151,7 +1500,6 @@
 
     .smart_contract_section {
         padding: 10px 0 40px 0;
-        margin: 40px 0;
     }
 
     .ever_app_card h6 {
@@ -1203,9 +1551,17 @@
         padding: 25px 12px;
     }
 
+    .footer_section {
+        margin-top: 4rem;
+    }
+
     .contract_card h6 {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 33.6px;
+    }
+
+    .contract_card_logo img {
+        height: 44px;
     }
 
     .price_card h6 {
@@ -1223,12 +1579,12 @@
     }
 
     .header_title_div h1 {
-        font-size: 28px;
-        line-height: 33px;
+        font-size: 33px;
+        line-height: 40px;
     }
 
     .header_title_div {
-        padding-top: 14px;
+        padding-top: 24px;
         padding-bottom: 30px;
     }
 
@@ -1248,6 +1604,20 @@
 
     .table_header_div h2 {
         font-size: 24px;
+        line-height: 33px;
+    }
+
+    .blockchain_text_section {
+        flex-direction: column !important;
+        gap: 20px;
+    }
+
+    .blockchain_text {
+        text-align: center !important;
+    }
+
+    .margin_row {
+        margin: 40px 0 !important;
     }
 
     .transparentCard p {
@@ -1256,7 +1626,7 @@
     }
 
     .contract_card02 {
-        min-height: 120px !important;
+        min-height: 114px !important;
     }
 
     .hacker_content_div h3 {
@@ -1267,6 +1637,25 @@
     .table_header_div {
         padding: 15px 20px;
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .quote_text_div h6 {
+        font-size: 15px;
+        min-height: 39px;
+    }
+
+    .it_work_content {
+        gap: 15px;
+    }
+
+    .count_nmb {
+        width: 35px;
+        height: 35px;
+    }
+
+    .quote_text_div {
+        gap: 25px;
     }
 
     .hacker_content_div p {

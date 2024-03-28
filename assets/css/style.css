@@ -828,16 +828,17 @@
     padding: 0 !important;
 }
 
-/* .ever_app_card h6 {
-    font-family: 'Inter';
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 51.6px;
-    text-align: left;
-    color: #171921;
-} */
+.ever_app_card h6 {
+    margin-top: 0 !important;
+}
 
-
+.accordionButtonTop{
+    align-items: start;
+}
+.accordionButtonTop:not(.collapsed)::after, .accordionButtonTop::after{
+position: relative;
+top: 5px;
+}
 .blockchain_text {
     width: 100%;
     max-width: 588px;

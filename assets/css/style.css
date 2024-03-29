@@ -7,7 +7,8 @@
 }
 
 .header_section {
-    background-color: #171921;
+    background-color: rgba(23, 25, 33, 0.9);
+    height: 100%;
 }
 
 /* .manage_container {
@@ -30,8 +31,7 @@
     top: 0;
     /* height: 76px; */
     padding: 13px 0;
-    /* height: 100px - 76px; */
-    background-color: #171921;
+    background-color: rgba(23, 25, 33, 0.9);
     z-index: 99;
 }
 
@@ -145,9 +145,11 @@
 }
 
 .home_section_one {
-    margin-top: 76px;
-    padding: 16px 0 50px 0;
+    height: auto;
+    min-height: 500px;
+    padding: 100px 0 50px 0;
     position: relative;
+    background: rgba(23, 25, 33, 0.9);
 }
 
 .joinBtn {
@@ -172,13 +174,24 @@
 
 .earthImgSection {
     position: relative;
-    z-index: 9;
+    /* z-index: 9; */
 }
-
-.earthImgSection img {
-    width: 88%;
+.earthImgSectionHome{
+    position: relative;
 }
-
+.earthImgSectionHome img {
+    width: 67%;
+}
+.earthImgSectionHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.earthImgSection img{
+    width: auto;
+    /* max-width: 400px; */
+    /* height: 300px; */
+}
 .transparentCard {
     background: linear-gradient(130.3deg, rgba(23, 25, 33, 0.4) 24.82%, rgba(23, 25, 33, 0.2) 100%);
     border: 1px solid #20222A;
@@ -221,6 +234,7 @@
 
 .transparentCardDiv {
     position: absolute;
+    z-index: 9;
 }
 
 .transparentCard02 {
@@ -237,13 +251,13 @@
 }
 
 .shadowDiv {
-    background: radial-gradient(63.32% 56.53% at 50% 64.29%, #2F3343 0%, #171921 100%);
+    background: rgba(23, 25, 33, 0.9);
     height: auto;
-    min-height: 120.87px;
+    min-height: 500px;
     position: absolute;
-    bottom: 0;
+    top: 0;
     width: 100%;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
 
 .home_section_two {
@@ -485,6 +499,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .contract_card h6 {
@@ -506,7 +521,7 @@
     line-height: 25px;
     text-align: left;
     width: 100%;
-    max-width: 424px;
+    max-width: 500px;
     height: auto;
     min-height: 100px;
 }
@@ -750,6 +765,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
 }
 
 .price_card h6 {
@@ -832,13 +848,16 @@
     margin-top: 0 !important;
 }
 
-.accordionButtonTop{
+.accordionButtonTop {
     align-items: start;
 }
-.accordionButtonTop:not(.collapsed)::after, .accordionButtonTop::after{
-position: relative;
-top: 5px;
+
+.accordionButtonTop:not(.collapsed)::after,
+.accordionButtonTop::after {
+    position: relative;
+    top: 5px;
 }
+
 .blockchain_text {
     width: 100%;
     max-width: 588px;
@@ -1009,7 +1028,9 @@ top: 5px;
     color: #3C3C43D9;
     margin-bottom: 0;
 }
-
+.accordion-body p strong{
+    color: #222223;
+}
 .accordionButton:not(.collapsed)::after {
     background-image: url(../images/xmark.svg);
 }
@@ -1034,24 +1055,87 @@ top: 5px;
     max-width: 757px;
 
 }
-.request_title span{
+
+.request_title span {
     color: #51D5C1;
 }
-.professional_request_div{
+
+.professional_request_div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
-.testing_card{
+
+.testing_card {
     height: auto;
     min-height: 250px !important;
 }
+.price_card_crypto{
+    min-height: 200px;
+}
+.price_card_crypto h6 {
+    font-size: 32px;
+    /* width: 100%;
+    max-width: 232px; */
+    line-height: 38px;
+}
+
+.wallet_app_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    min-height: 224px;
+    border: 1px solid #D1D1D3;
+    padding: 20px 20px;
+    border-radius: 12px;
+    gap: 15px;
+}
+
+.wallet_app_card img {
+    width: auto;
+    height: 26px;
+    margin-right: auto;
+}
+
+.wallet_app_card h6 {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 51.6px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #222223;
+}
+
+.wallet_app_card p {
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #222223;
+}
+
 @media screen and (max-width:1400px) {
+    .wallet_app_card h6 {
+        font-size: 22px;
+    }
+    .wallet_app_card img {
+        height: 26px;
+    } 
+    .wallet_app_card p {
+        font-size: 14px;
+        line-height: 23px;
+    }       
     .request_title {
         font-size: 44px;
         line-height: 56.09px;
-    }    
+    }
+
     .margin_row {
         margin: 80px 0 !important;
     }
@@ -1082,11 +1166,23 @@ top: 5px;
 }
 
 @media screen and (max-width : 1200px) {
+    .earthImgSection img{
+        height: auto;
+    }
+    .wallet_app_card h6 {
+        font-size: 20px;
+        line-height: 28.6px;
+    }
+    .price_card_crypto h6 {
+        font-size: 26px !important;
+        line-height: 34px !important;
+    }
     .request_title {
         font-size: 40px;
         line-height: 51.09px;
         max-width: 645px;
     }
+
     .faq_text {
         font-size: 69px;
         line-height: normal;
@@ -1229,11 +1325,15 @@ top: 5px;
 }
 
 @media screen and (max-width: 992px) {
+    .shadowDiv {
+        min-height: 100%;
+    }
     .request_title {
         font-size: 37px;
         line-height: 47.09px;
         max-width: 645px;
     }
+
     .faq_text {
         font-size: 60px;
     }
@@ -1393,15 +1493,20 @@ top: 5px;
 }
 
 @media screen and (max-width : 768px) {
+    .lastP{
+        text-align: center !important;
+    }
     .request_title {
         font-size: 36px;
         line-height: 43.09px;
         max-width: 100%;
         text-align: center;
     }
-    .professional_request_div{
+
+    .professional_request_div {
         flex-direction: column;
     }
+
     .faq_text {
         font-size: 55px;
     }
@@ -1449,12 +1554,27 @@ top: 5px;
 }
 
 @media screen and (max-width : 576px) {
+    .wallet_app_card img {
+        height: 24px;
+    }
+    .earthImgSection img{
+        width: 100%;
+    }
+    .wallet_app_card {
+        min-height: 200px;
+        gap: 20px;
+    }
+    .needCard p {
+        text-align: center;
+    }
+
     .request_title {
         font-size: 30px;
         line-height: 37.09px;
         max-width: 100%;
         text-align: center;
     }
+
     .faq_text {
         font-size: 50px;
     }
@@ -1507,7 +1627,7 @@ top: 5px;
         text-align: center;
     }
 
-    .earthImgSection img {
+    .earthImgSectionHome img {
         width: 100%;
     }
 
@@ -1572,11 +1692,6 @@ top: 5px;
 
     .contract_card {
         min-height: 280px;
-    }
-
-    .home_section_one {
-        margin-top: 74px;
-
     }
 
     .header_title_div h1 {

@@ -525,7 +525,9 @@
     height: auto;
     min-height: 100px;
 }
-
+.contract_card p span{
+    color: #51D5C1;
+}
 /* .contract_card_logo */
 .contract_card_logo02 {
     display: flex;
@@ -962,7 +964,7 @@
     font-family: 'Inter';
     font-size: 20px;
     font-weight: 600;
-    /* line-height: 51.6px; */
+    line-height: normal;
     text-align: left;
     margin-bottom: 0;
     color: #222223;
@@ -1127,6 +1129,9 @@
 }
 
 @media screen and (max-width:1400px) {
+    .essential_txt {
+        font-size: 45px;
+    }
     .wallet_app_card h6 {
         font-size: 22px;
     }
@@ -1560,6 +1565,10 @@
 }
 
 @media screen and (max-width : 576px) {
+    .example_btn_group{
+        flex-wrap: wrap;
+        gap: 20px !important;
+    }
     .get_quote_col {
         gap: 10px;
     }

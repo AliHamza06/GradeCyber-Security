@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Example</title>
+<style>
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .button {
+    flex: 1;
+    font-size: 16px;
+    color: #fff;
+    padding: 16px 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+    width: 150px;
+    border-radius: 6px;
+  }
+  
+  .button:hover {
+  }
+  
+  .button:focus {
+    animation: clickEffect .3s ease forwards;
+    transform: scale(0.9);
+  }
+  
+  .button.active {
+    background-color: beige;
+    border: 1px solid lawngreen;
+  }
+</style>
+</head>
+<body>
+
+<div class="buttons">
+  <button class="button">Button 1</button>
+  <button class="button">Button 2</button>
+  <button class="button">Button 3</button>
+  <button class="button">Button 4</button>
+  <button class="button">Button 5</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    buttonFunction();
+  });
+
+  function buttonFunction() {
+    $(".button").on("click", function () {
+      $(this).siblings().removeClass("active").html("Button");
+      $(this).toggleClass("active");
+    });
+  }
+</script>
+
+</body>
+</html>

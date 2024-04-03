@@ -12,6 +12,7 @@
 .header_section {
     background-color: rgba(23, 25, 33, 0.9);
     height: 100%;
+    position: relative;
 }
 
 /* .manage_container {
@@ -1312,6 +1313,7 @@
     color: #1A202E;
     height: auto;
     min-height: 87px;
+    margin-bottom: 0;
 }
 
 .postedProfile {
@@ -1453,6 +1455,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: unset !important;
+    max-width: 100% !important;
 }
 
 .filter_group {
@@ -1494,7 +1497,224 @@
     border: 1px solid #51D5C1;
 }
 
+.news_card_body h2 {
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #1A202E;
+    margin-top: 10px;
+}
+
+/* .blog_img_div{
+    height: 240px;
+} */
+.transparent_shadow {
+    background: radial-gradient(63.32% 56.53% at 50% 64.29%, #2F3343 0%, #171921 100%);
+    min-height: 113.87px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.expertTime_section {
+    margin-top: 3rem;
+}
+
+.expertTime_section ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.expertTime_section ul li {
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: #222223;
+    margin-top: 2rem;
+}
+
+.investment_card p {
+    width: unset !important;
+    min-height: auto !important;
+    text-align: center;
+}
+
+.learn_moreBtn {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.25px;
+    text-align: left;
+    border: 2px solid #51D5C1;
+    border-radius: 57px;
+    width: max-content;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #222223;
+    margin-top: 1rem;
+}
+
+.learn_moreBtn:hover {
+    background-color: #51D5C1;
+    color: #FFFFFF;
+}
+
+.contract_card ul {
+    padding-left: 1rem;
+}
+
+.contract_card ul li {
+    margin-top: 1rem;
+}
+
+.any_question {
+    gap: 40px;
+}
+
+.career_main {
+    padding: 120px 0;
+}
+
+.social_icon_sec {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.social_icon_sec img {
+    width: auto;
+    height: 32px;
+    transition: all 300ms ease-in-out;
+}
+
+.social_icon_sec img:hover {
+    transform: scale(1.3);
+}
+
+.open_text {
+    margin: 4rem 0;
+}
+
+.career_content h1 {
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    text-align: center;
+    color: #222223;
+}
+
+.career_content h6 {
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.73px;
+    text-align: center;
+    color: #222223;
+
+}
+
+.career_content p {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    color: #222223;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.career_content h4 {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: left;
+    color: #222223;
+    margin-top: 2rem;
+}
+
+.filter_card {
+    border: 1px solid #D1D1D3;
+    border-radius: 12px;
+    padding: 20px 25px;
+    height: auto;
+    min-height: 138px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.filter_card h6 {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.filter_card p {
+    color: #000000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.filter_create_card {
+    border: 1px solid #D1D1D3;
+    border-radius: 12px;
+    padding: 20px 25px;
+    height: auto;
+    min-height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.filter_create_card h6 {
+    margin-bottom: 0;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: left;
+    color: #222223;
+}
+.filter_create_card img{
+    width: auto;
+    height: 13px;
+    cursor: pointer;
+}
 @media screen and (max-width:1400px) {
+    .career_content h1 {
+        font-size: 44px;
+    }
+    .career_content h6 {
+        font-size: 30px;
+    }
+    .filter_card h6 {
+        font-size: 22px;
+    }
+    .filter_card p {
+        font-size: 18px;
+    }
+    .news_card_body h2 {
+        font-size: 21px;
+    }
+
     .apply_card h4 {
         font-size: 38px;
     }
@@ -1565,6 +1785,40 @@
 }
 
 @media screen and (max-width : 1200px) {
+    .social_icon_sec img {
+        height: 28px;
+    }
+    .career_content p {
+        line-height: 28px;
+    }.filter_card h6 {
+        font-size: 20px;
+    }
+    .filter_card p {
+        font-size: 16px;
+    }
+    .filter_card {
+        min-height: 112px;
+    }    
+    .career_content h6 {
+        font-size: 28px;
+        line-height: 32.73px;
+    }
+    
+    .career_content h1 {
+        font-size: 40px;
+    }
+    .career_main {
+        padding: 100px 0;
+    }
+    .news_card_body h2 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .filter_group {
+        padding-top: 100px;
+    }
+
     .vcs_content h1 {
         font-size: 32px;
         line-height: 47.6px;
@@ -1785,6 +2039,15 @@
 }
 
 @media screen and (max-width: 992px) {
+    .expertTime_section ul li {
+        font-size: 16px;
+        margin-top: 1.5rem;
+    }
+
+    .filter_group {
+        padding-top: 78px;
+    }
+
     .introduced ul li {
         font-size: 16px;
     }
@@ -1974,6 +2237,21 @@
 }
 
 @media screen and (max-width : 768px) {
+    .open_text {
+        margin: 3rem 0;
+    }
+    .filter_group {
+        padding-top: 25px;
+    }
+
+    .input_group input {
+        width: 100%;
+    }
+
+    .blog_header_title_div {
+        flex-direction: column !important;
+    }
+
     .vcs_content h1 {
         font-size: 28px;
         line-height: 46.6px;
@@ -2073,6 +2351,44 @@
 }
 
 @media screen and (max-width : 576px) {
+    .career_content h1 {
+        font-size: 30px;
+        line-height: 38.09px;
+
+    }
+    .career_content h6 {
+        font-size: 25px;
+        line-height: 30.73px;
+    }
+    .expertTime_section ul li {
+        font-size: 14px;
+        margin-top: 1rem;
+        line-height: 25px;
+    }
+
+    .investment_card {
+        flex-wrap: wrap;
+    }
+
+    .investment_card p {
+        padding: 8px 10px;
+    }
+
+    .news_card_body h2 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .newsDesc {
+        font-size: 13px;
+        line-height: 21px;
+        min-height: 63px;
+    }
+
+    .transparent_shadow {
+        min-height: 100.87px;
+    }
+
     .apply_card h4 {
         font-size: 28px;
         line-height: 38.41px;

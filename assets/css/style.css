@@ -2237,6 +2237,9 @@
 }
 
 @media screen and (max-width : 768px) {
+    .row_reverse{
+        flex-direction: column-reverse;
+    }
     .open_text {
         margin: 3rem 0;
     }
@@ -2351,6 +2354,20 @@
 }
 
 @media screen and (max-width : 576px) {
+    .footer_logo img{
+        height: auto;
+    }
+    .transparentCardDiv{
+        width: 100%;
+    }
+    .filter_card h6 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .filter_create_card h6 {
+        font-size: 16px;
+        line-height: 29px;
+    }
     .career_content h1 {
         font-size: 30px;
         line-height: 38.09px;

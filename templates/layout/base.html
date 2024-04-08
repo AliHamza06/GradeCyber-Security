@@ -1,0 +1,99 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block title %} {% endblock title %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    {% block content %} {% endblock content %}
+    {% include 'includes/footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Custom js -->
+    <script src="{% static 'assets/js/file.js' %}"></script>
+    <!-- jquery link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var words = document.getElementsByClassName('word');
+        var wordArray = [];
+        var currentWord = 0;
+
+        words[currentWord].style.opacity = 1;
+        for (var i = 0; i < words.length; i++) {
+            splitLetters(words[i]);
+        }
+
+        function changeWord() {
+            var cw = wordArray[currentWord];
+            var nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
+            for (var i = 0; i < cw.length; i++) {
+                animateLetterOut(cw, i);
+            }
+
+            for (var i = 0; i < nw.length; i++) {
+                nw[i].className = 'letter behind';
+                nw[0].parentElement.style.opacity = 1;
+                animateLetterIn(nw, i);
+            }
+
+            currentWord = (currentWord == wordArray.length - 1) ? 0 : currentWord + 1;
+        }
+
+        function animateLetterOut(cw, i) {
+            setTimeout(function () {
+                cw[i].className = 'letter out';
+            }, i * 80);
+        }
+
+        function animateLetterIn(nw, i) {
+            setTimeout(function () {
+                nw[i].className = 'letter in';
+            }, 340 + (i * 80));
+        }
+
+        function splitLetters(word) {
+            var content = word.innerHTML;
+            word.innerHTML = '';
+            var letters = [];
+            for (var i = 0; i < content.length; i++) {
+                var letter = document.createElement('span');
+                letter.className = 'letter';
+                letter.innerHTML = content.charAt(i);
+                word.appendChild(letter);
+                letters.push(letter);
+            }
+
+            wordArray.push(letters);
+        }
+
+        changeWord();
+        setInterval(changeWord, 4000);
+    </script>
+
+    <!-- blog oage button js -->
+    <script>
+        $(document).ready(function () {
+            buttonFunction();
+        });
+
+        function buttonFunction() {
+            $(".filterBtn").on("click", function () {
+                $(this).siblings().removeClass("active");
+                $(this).toggleClass("active");
+            });
+        }
+    </script>
+</body>
+
+</html>

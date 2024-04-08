@@ -1,0 +1,674 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}
+<title>GradeCyber | dApp Audit</title>
+{% endblock title %}
+
+{% block content %}
+
+<!-- Header Section Start -->
+<div class="header_section">
+    <!-- navbar -->
+    {% include 'includes/header.html' %}
+    <!-- Home Section One -->
+    <div class="home_section_one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="header_title_div">
+                        <h1>dApp Audit</h1>
+                        <p>
+                            Conduct a comprehensive audit of your decentralized application to ensure safe and
+                            secure interaction with the blockchain network.
+                        </p>
+                        <a href="#" class="joinBtnHref">
+                            <button class="joinBtn">
+                                <div>
+                                    <span>J</span>
+                                    <span>o</span>
+                                    <span>i</span>
+                                    <span>n</span>
+                                    <span class="space"> </span>
+                                    <span>t</span>
+                                    <span>h</span>
+                                    <span>e</span>
+                                    <span class="space"> </span>
+                                    <span>M</span>
+                                    <span>o</span>
+                                    <span>v</span>
+                                    <span>e</span>
+                                    <span>m</span>
+                                    <span>e</span>
+                                    <span>n</span>
+                                    <span>t</span>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-3">
+                    <div class="earthImgSection">
+                        <img src="{% static '/assets/images/clip.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadowDiv"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="home_section_four">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <!-- Logo and Heading 1 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{% static '/assets/images/marq2.svg' %}" alt="logo" class="marqLogo">
+                </div>
+
+                <!-- Logo and Heading 2 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{% static '/assets/images/marq1.svg' %}" alt="logo" class="marqLogo">
+                </div>
+
+                <!-- Logo and Heading 3 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{% static '/assets/images/marq3.svg' %}" alt="logo" class="marqLogo">
+                </div>
+
+                <!-- Logo and Heading 4 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{% static '/assets/images/marq4.svg' %}" alt="logo" class="marqLogo">
+                </div>
+
+                <!-- Logo and Heading 5 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{% static '/assets/images/marq5.svg' %}" alt="logo" class="marqLogo">
+                </div>
+
+                <!-- Logo and Heading 6 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{% static '/assets/images/marq6.svg' %}" alt="logo" class="marqLogo">
+                </div>
+                <div class="logo_and_TxtDiv">
+                    <img src="{% static '/assets/images/marq7.svg' %}" alt="logo" class="marqLogo">
+                </div>
+                <div class="logo_and_TxtDiv">
+                    <img src="{% static '/assets/images/marq8.svg' %}" alt="logo" class="marqLogo">
+                </div>
+                <div class="logo_and_TxtDiv">
+                    <img src="{% static '/assets/images/marq9.svg' %}" alt="logo" class="marqLogo last_marLogo">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="protocol_audit_section margin_row">
+        <div class="professional_request_div">
+            <h3 class="request_title" style="max-width: 827px;">
+                Secure the entire architecture of your protocol with professional <span>security audit and
+                    testing.</span>
+            </h3>
+            <a href="#" class="public_audits_btn">
+                Request a quote
+                <i class="bi bi-chevron-right"></i>
+            </a>
+        </div>
+        <div class="row mt-sm-5 mt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Protect sensitive data</h6>
+                    </div>
+                    <p style="min-height: auto; max-width: 100%;">
+                        Our security standards prioritize the protection of sensitive data, providing you with peace
+                        of mind regarding your private key safety.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Gain users’ trust</h6>
+                    </div>
+                    <p style="min-height: auto; max-width: 100%;">
+                        Build trust with users by ensuring complete system security and keeping up-to-date with the
+                        latest security trends.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Prevent expensive mistakes</h6>
+                    </div>
+                    <p style="min-height: auto; max-width: 100%;">
+                        A security audit is not an added expense, but rather a cost-saving measure that can help
+                        prevent hacks and leaks, ultimately reducing potential costs associated with security
+                        breaches.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="smart_contract_section py-0 margin_row" style="background: none;">
+    <div class="container">
+        <h4 class="essential_txt"><span>Decentralized application</span> audit is essential</h4>
+        <div class="row mt-sm-5 mt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                <div class="price_card">
+                    <h6>$3.8B</h6>
+                    <p>
+                        stolen from crypto projects in 2022
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                <div class="price_card">
+                    <h6>100+</h6>
+                    <p>
+                        dApp exploits for $3.6 billion
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                <div class="price_card">
+                    <h6>$100M+</h6>
+                    <p>
+                        8 dApp hacks with > $100 million lost
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="home_section_five margin_row">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <h5 class="build_trust_txt">
+                    What projects need <span>dApp audit services?</span>
+                </h5>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Wallets</h6>
+                    </div>
+                    <p>
+                        Wallets are where users store their digital assets, such as cryptocurrency, and they can be
+                        particularly vulnerable to security breaches. Secure wallet is a critical part of
+                        interacting with blockchain networks, and a dApp audit can play a vital role in ensuring
+                        that your wallet is secure.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Cross-Chain Bridges</h6>
+                    </div>
+                    <p>
+                        Cross-chain bridges enable the transfer of assets across different blockchains, which
+                        presents a unique set of security challenges that must be properly addressed. Securing
+                        cross-chain bridges with dApp audit is critical to ensure the safety and reliability of
+                        these systems.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>... and everything else!</h6>
+                    </div>
+                    <p>
+                        Well, almost everything. Secure any application that performs cross-chain operations, has
+                        custody over sensitive information, reacts to the blockchain events, or uses message signing
+                        for authentication.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="smart_contract_section margin_row">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 mt-4">
+                <h1 class="need_project">When projects need <span>dApp audit?</span></span></span></h1>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+                        <div class="needCard">
+                            <img src="{% static '/assets/images/icon13.svg' %}" alt="">
+                            <p>
+                                When preparing for product release
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+                        <div class="needCard">
+                            <img src="{% static '/assets/images/icon14.svg' %}" alt="">
+                            <p>
+                                Before blockchain protocol upgrade
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 mt-4">
+                        <div class="needCard">
+                            <img src="{% static '/assets/images/icon16.svg' %}" alt="">
+                            <p>
+                                After implementing significant changes to the core dApp functionality
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="benifts_section margin_row">
+        <h4 class="essential_txt">Benefits of BlockChain Protocol auditing by <span>GradeCyber</span></h4>
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Robust Methodology</h6>
+                    </div>
+                    <p>
+                        Built upon industry-accepted core security principles and is specifically tailored to review
+                        applications that interact with blockchain networks.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Transparent Pricing</h6>
+                    </div>
+                    <p>
+                        A breakdown of the full dApp audit price with no hidden fees.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Trust</h6>
+                    </div>
+                    <p>
+                        Trusted by leading blockchain organizations and major Web3 projects.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Human Face</h6>
+                    </div>
+                    <p>
+                        Credible auditor with public industry-recognized leaders.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Caring</h6>
+                    </div>
+                    <p>
+                        A truly caring team with a focus on client outcomes.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Expertise</h6>
+                    </div>
+                    <p>
+                        Auditors with a proven record of reviewing decentralized applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="it_work_section margin_row">
+        <div class="row">
+            <div class="col-lg-7 col-md-6">
+                <div class="it_work_content">
+                    <h3>How does it <span>work?</span></h3>
+                    <p>
+                        The total Smart Contract Audit time takes from 5 to 15 business days.
+                    </p>
+                    <a href="#" class="public_audits_btn">
+                        Request a quote
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 get_quote_col">
+                <div class="count_div">
+                    <div class="count_nmb">
+                        <li>1</li>
+                    </div>
+                    <div class="line_div"></div>
+                    <div class="count_nmb">
+                        <li>2</li>
+                    </div>
+                    <div class="line_div"></div>
+                    <div class="count_nmb">
+                        <li>3</li>
+                    </div>
+                    <div class="line_div"></div>
+                    <div class="count_nmb">
+                        <li>4</li>
+                    </div>
+                </div>
+                <div class="quote_text_div">
+                    <h6>Get a quote</h6>
+                    <h6>Audit report</h6>
+                    <h6>Remediation check</h6>
+                    <h6>Certification and promotion</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="it_work_section px-0 py-0 margin_row" style="border: none;">
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <div class="it_work_content" style="max-width: 439px;">
+                    <h3>What's included in <span>dApp audit report?</span></h3>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="public_audits_btn">
+                            View report example
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <a href="#" class="public_audits_btn" style="border: none;">
+                            View Our Methodology
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+                <div class="quote_text_div quote_text_div02">
+                    <h6>A list of issues and vulnerabilities that were found during the review with recommendations
+                        on how to address them.</h6>
+                    <h6>Numerical score for each metric for security, code and documentation quality with the
+                        overall system score calculated.</h6>
+                    <h6>An overview of the system created by the security engineers.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="faq_section margin_row">
+        <div class="row">
+            <div class="col-lg-2 col-md-12">
+                <h1 class="faq_text">FAQ</h1>
+            </div>
+            <div class="col-lg-10 col-md-12 mt-lg-0 mt-sm-4 mt-3">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is a dApp?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    dApp (Decentralized Application) is an application that interacts with a
+                                    blockchain in one form or another (e.g. calls or reads from Smart Contracts;
+                                    blockchain indexing, etc.). Usually, it helps with achieving something that is
+                                    not possible with just Smart Contracts (like random), or for indexing some
+                                    information that is not easily accessible through the blockchain directly
+                                    (transaction history, custom Smart Contracts events, etc.). Ensure secure
+                                    blockchain interaction with dApp audit. dApps, such as wallets and cross-chain
+                                    bridges, are connected to the blockchain. Most projects only audit smart
+                                    contracts paying no attention to off-chain vulnerabilities. Grade dApp audit
+                                    is the best available choice for projects that want a high level of security.
+                                    Focused on the off-chain code review, our dApp audit prevents the leakage of a
+                                    private key and ensures a secure interaction of your dApp with the protocol.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                What coding languages are dApps based on?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    dApp (Decentralized Application) is an application that interacts with a
+                                    blockchain in one form or another (e.g. calls or reads from Smart Contracts;
+                                    blockchain indexing, etc.). Usually, it helps with achieving something that is
+                                    not possible with just Smart Contracts (like random), or for indexing some
+                                    information that is not easily accessible through the blockchain directly
+                                    (transaction history, custom Smart Contracts events, etc.). Ensure secure
+                                    blockchain interaction with dApp audit. dApps, such as wallets and cross-chain
+                                    bridges, are connected to the blockchain. Most projects only audit smart
+                                    contracts paying no attention to off-chain vulnerabilities. Grade dApp audit
+                                    is the best available choice for projects that want a high level of security.
+                                    Focused on the off-chain code review, our dApp audit prevents the leakage of a
+                                    private key and ensures a secure interaction of your dApp with the protocol.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                What is the difference between a dApp and a smart contract?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    dApp (Decentralized Application) is an application that interacts with a
+                                    blockchain in one form or another (e.g. calls or reads from Smart Contracts;
+                                    blockchain indexing, etc.). Usually, it helps with achieving something that is
+                                    not possible with just Smart Contracts (like random), or for indexing some
+                                    information that is not easily accessible through the blockchain directly
+                                    (transaction history, custom Smart Contracts events, etc.). Ensure secure
+                                    blockchain interaction with dApp audit. dApps, such as wallets and cross-chain
+                                    bridges, are connected to the blockchain. Most projects only audit smart
+                                    contracts paying no attention to off-chain vulnerabilities. Grade dApp audit
+                                    is the best available choice for projects that want a high level of security.
+                                    Focused on the off-chain code review, our dApp audit prevents the leakage of a
+                                    private key and ensures a secure interaction of your dApp with the protocol.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                What are smart contracts used by dApps?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    dApp (Decentralized Application) is an application that interacts with a
+                                    blockchain in one form or another (e.g. calls or reads from Smart Contracts;
+                                    blockchain indexing, etc.). Usually, it helps with achieving something that is
+                                    not possible with just Smart Contracts (like random), or for indexing some
+                                    information that is not easily accessible through the blockchain directly
+                                    (transaction history, custom Smart Contracts events, etc.). Ensure secure
+                                    blockchain interaction with dApp audit. dApps, such as wallets and cross-chain
+                                    bridges, are connected to the blockchain. Most projects only audit smart
+                                    contracts paying no attention to off-chain vulnerabilities. Grade dApp audit
+                                    is the best available choice for projects that want a high level of security.
+                                    Focused on the off-chain code review, our dApp audit prevents the leakage of a
+                                    private key and ensures a secure interaction of your dApp with the protocol.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                What are the security challenges of dApp? How secure are dApps?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    dApp (Decentralized Application) is an application that interacts with a
+                                    blockchain in one form or another (e.g. calls or reads from Smart Contracts;
+                                    blockchain indexing, etc.). Usually, it helps with achieving something that is
+                                    not possible with just Smart Contracts (like random), or for indexing some
+                                    information that is not easily accessible through the blockchain directly
+                                    (transaction history, custom Smart Contracts events, etc.). Ensure secure
+                                    blockchain interaction with dApp audit. dApps, such as wallets and cross-chain
+                                    bridges, are connected to the blockchain. Most projects only audit smart
+                                    contracts paying no attention to off-chain vulnerabilities. Grade dApp audit
+                                    is the best available choice for projects that want a high level of security.
+                                    Focused on the off-chain code review, our dApp audit prevents the leakage of a
+                                    private key and ensures a secure interaction of your dApp with the protocol.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                aria-controls="collapseSix">
+                                What are the dApp security improvement practices?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    dApp (Decentralized Application) is an application that interacts with a
+                                    blockchain in one form or another (e.g. calls or reads from Smart Contracts;
+                                    blockchain indexing, etc.). Usually, it helps with achieving something that is
+                                    not possible with just Smart Contracts (like random), or for indexing some
+                                    information that is not easily accessible through the blockchain directly
+                                    (transaction history, custom Smart Contracts events, etc.). Ensure secure
+                                    blockchain interaction with dApp audit. dApps, such as wallets and cross-chain
+                                    bridges, are connected to the blockchain. Most projects only audit smart
+                                    contracts paying no attention to off-chain vulnerabilities. Grade dApp audit
+                                    is the best available choice for projects that want a high level of security.
+                                    Focused on the off-chain code review, our dApp audit prevents the leakage of a
+                                    private key and ensures a secure interaction of your dApp with the protocol.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                                aria-controls="collapseSeven">
+                                Can I conduct a dApp audit myself?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    dApp (Decentralized Application) is an application that interacts with a
+                                    blockchain in one form or another (e.g. calls or reads from Smart Contracts;
+                                    blockchain indexing, etc.). Usually, it helps with achieving something that is
+                                    not possible with just Smart Contracts (like random), or for indexing some
+                                    information that is not easily accessible through the blockchain directly
+                                    (transaction history, custom Smart Contracts events, etc.). Ensure secure
+                                    blockchain interaction with dApp audit. dApps, such as wallets and cross-chain
+                                    bridges, are connected to the blockchain. Most projects only audit smart
+                                    contracts paying no attention to off-chain vulnerabilities. Grade dApp audit
+                                    is the best available choice for projects that want a high level of security.
+                                    Focused on the off-chain code review, our dApp audit prevents the leakage of a
+                                    private key and ensures a secure interaction of your dApp with the protocol.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                                aria-controls="collapseEight">
+                                Will I get recommendations on how to address detected issues after an audit?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    dApp (Decentralized Application) is an application that interacts with a
+                                    blockchain in one form or another (e.g. calls or reads from Smart Contracts;
+                                    blockchain indexing, etc.). Usually, it helps with achieving something that is
+                                    not possible with just Smart Contracts (like random), or for indexing some
+                                    information that is not easily accessible through the blockchain directly
+                                    (transaction history, custom Smart Contracts events, etc.). Ensure secure
+                                    blockchain interaction with dApp audit. dApps, such as wallets and cross-chain
+                                    bridges, are connected to the blockchain. Most projects only audit smart
+                                    contracts paying no attention to off-chain vulnerabilities. Grade dApp audit
+                                    is the best available choice for projects that want a high level of security.
+                                    Focused on the off-chain code review, our dApp audit prevents the leakage of a
+                                    private key and ensures a secure interaction of your dApp with the protocol.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
+                                aria-controls="collapseNine">
+                                What is the duration of a dApp audit?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    dApp (Decentralized Application) is an application that interacts with a
+                                    blockchain in one form or another (e.g. calls or reads from Smart Contracts;
+                                    blockchain indexing, etc.). Usually, it helps with achieving something that is
+                                    not possible with just Smart Contracts (like random), or for indexing some
+                                    information that is not easily accessible through the blockchain directly
+                                    (transaction history, custom Smart Contracts events, etc.). Ensure secure
+                                    blockchain interaction with dApp audit. dApps, such as wallets and cross-chain
+                                    bridges, are connected to the blockchain. Most projects only audit smart
+                                    contracts paying no attention to off-chain vulnerabilities. Grade dApp audit
+                                    is the best available choice for projects that want a high level of security.
+                                    Focused on the off-chain code review, our dApp audit prevents the leakage of a
+                                    private key and ensures a secure interaction of your dApp with the protocol.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

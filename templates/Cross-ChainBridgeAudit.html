@@ -1,0 +1,341 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}
+<title>GradeCyber | Cross-Chain Bridge Audit</title>
+{% endblock title %}
+
+{% block content %}
+
+<!-- Header Section Start -->
+<div class="header_section">
+    <!-- navbar -->
+    {% include 'includes/header.html' %}
+        <!-- Home Section One -->
+        <div class="home_section_one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="header_title_div">
+                            <h1>Cross-ChainBridge Audit</h1>
+                            <p>
+                                Code review & security analysisfor cross-chain crypto bridges.
+                            </p>
+                            <a href="#" class="joinBtnHref">
+                                <button class="joinBtn">
+                                    <div>
+                                        <span>J</span>
+                                        <span>o</span>
+                                        <span>i</span>
+                                        <span>n</span>
+                                        <span class="space"> </span>
+                                        <span>t</span>
+                                        <span>h</span>
+                                        <span>e</span>
+                                        <span class="space"> </span>
+                                        <span>M</span>
+                                        <span>o</span>
+                                        <span>v</span>
+                                        <span>e</span>
+                                        <span>m</span>
+                                        <span>e</span>
+                                        <span>n</span>
+                                        <span>t</span>
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 mt-3">
+                        <div class="earthImgSection">
+                            <img src="{% static '/assets/images/clip.png' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadowDiv"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="home_section_four">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <!-- Logo and Heading 1 -->
+                    <div class="logo_and_TxtDiv">
+                        <img src="{% static '/assets/images/marq2.svg' %}" alt="logo" class="marqLogo">
+                    </div>
+
+                    <!-- Logo and Heading 2 -->
+                    <div class="logo_and_TxtDiv">
+                        <img src="{% static '/assets/images/marq1.svg' %}" alt="logo" class="marqLogo">
+                    </div>
+
+                    <!-- Logo and Heading 3 -->
+                    <div class="logo_and_TxtDiv">
+                        <img src="{% static '/assets/images/marq3.svg' %}" alt="logo" class="marqLogo">
+                    </div>
+
+                    <!-- Logo and Heading 4 -->
+                    <div class="logo_and_TxtDiv">
+                        <img src="{% static '/assets/images/marq4.svg' %}" alt="logo" class="marqLogo">
+                    </div>
+
+                    <!-- Logo and Heading 5 -->
+                    <div class="logo_and_TxtDiv">
+                        <img src="{% static '/assets/images/marq5.svg' %}" alt="logo" class="marqLogo">
+                    </div>
+
+                    <!-- Logo and Heading 6 -->
+                    <div class="logo_and_TxtDiv">
+                        <img src="{% static '/assets/images/marq6.svg' %}" alt="logo" class="marqLogo">
+                    </div>
+                    <div class="logo_and_TxtDiv">
+                        <img src="{% static '/assets/images/marq7.svg' %}" alt="logo" class="marqLogo">
+                    </div>
+                    <div class="logo_and_TxtDiv">
+                        <img src="{% static '/assets/images/marq8.svg' %}" alt="logo" class="marqLogo">
+                    </div>
+                    <div class="logo_and_TxtDiv">
+                        <img src="{% static '/assets/images/marq9.svg' %}" alt="logo" class="marqLogo last_marLogo">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="protocol_audit_section margin_row">
+            <div class="professional_request_div">
+                <h3 class="request_title" style="max-width: 827px;">
+                   <span> Cross-Chain Bridge Audit </span>
+                    could have prevented these hacks:
+                </h3>
+                <a href="#" class="public_audits_btn">
+                    Request a quote
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+            </div>
+            <div class="row mt-sm-5 mt-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="price_card price_card_crypto">
+                        <h6>Poly Network <br>
+                            $611M</h6>
+                        <p>
+                            function hash signature collisions
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="price_card price_card_crypto">
+                        <h6>BSC Token Hub <br>
+                            $586M</h6>
+                        <p>
+                            vulnerability in the 3rd party component used for verification
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="price_card price_card_crypto">
+                        <h6>Wormhole <br>
+                            $326M</h6>
+                        <p>
+                            signature forgery due to the broken way the contract initialized the system library
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="smart_contract_section py-0 margin_row" style="background: none;">
+        <div class="container">
+            <h4 class="essential_txt"><span>Common threats</span> for cross-chain bridges:</h4>
+            <div class="row mt-sm-5 mt-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="wallet_app_card" style="min-height: 135px;">
+                        <img src="{% static '/assets/images/icon.svg' %}" alt="">
+                        <p>
+                            Chain reorganization/finality
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="wallet_app_card" style="min-height: 135px;">
+                        <img src="{% static '/assets/images/icon.svg' %}" alt="">
+                        <p>
+                            Mixing of chain IDs
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="wallet_app_card" style="min-height: 135px;">
+                        <img src="{% static '/assets/images/icon.svg' %}" alt="">
+                        <p>
+                            Signature forgery
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="wallet_app_card" style="min-height: 135px;">
+                        <img src="{% static '/assets/images/icon.svg' %}" alt="">
+                        <p>
+                            Code/architecture vulnerabilities
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="wallet_app_card" style="min-height: 135px;">
+                        <img src="{% static '/assets/images/icon.svg' %}" alt="">
+                        <p>
+                            Dependency on legacy contracts/libraries
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
+                    <div class="wallet_app_card" style="min-height: 135px;">
+                        <img src="{% static '/assets/images/icon.svg' %}" alt="">
+                        <p>
+                            Infinite approvals & arbitrary executions
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="it_work_section px-0 py-0 margin_row" style="border: none;">
+            <div class="row">
+                <div class="col-lg-5 col-md-6">
+                    <div class="it_work_content" style="max-width: 439px;">
+                        <h3>What our <span>blockchain bridge audit includes:</span></h3>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="public_audits_btn">
+                                View report example
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <a href="#" class="public_audits_btn" style="border: none;">
+                                View Our Methodology
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="quote_text_div quote_text_div02">
+                        <h6>A line-by-line examination of the entire codebase, dependencies, algorithm/math model & business logic.</h6>
+                        <h6>Building proof of concept for found bugs and risk assessment for vulnerable dependencies.</h6>
+                        <h6>Source code examination with advanced analytical tools.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="it_work_section margin_row">
+            <div class="row">
+                <div class="col-lg-7 col-md-6">
+                    <div class="it_work_content">
+                        <h3>How does it <span>work?</span></h3>
+                        <p>
+                            The total Smart Contract Audit time takes from 5 to 15 business days.
+                        </p>
+                        <a href="#" class="public_audits_btn">
+                            Request a quote
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 get_quote_col">
+                    <div class="count_div">
+                        <div class="count_nmb">
+                            <li>1</li>
+                        </div>
+                        <div class="line_div"></div>
+                        <div class="count_nmb">
+                            <li>2</li>
+                        </div>
+                        <div class="line_div"></div>
+                        <div class="count_nmb">
+                            <li>3</li>
+                        </div>
+                        <div class="line_div"></div>
+                        <div class="count_nmb">
+                            <li>4</li>
+                        </div>
+                    </div>
+                    <div class="quote_text_div">
+                        <h6>Get a quote</h6>
+                        <h6>Audit report</h6>
+                        <h6>Remediation check</h6>
+                        <h6>Certification and promotion</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="benifts_section margin_row">
+            <h4 class="essential_txt">Benefits of wallet auditing by <span>GradeCyber</span></h4>
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="contract_card">
+                        <div class="contract_card_logo">
+                            <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                            <h6>Proven Security Record</h6>
+                        </div>
+                        <p>
+                            No exploits of our clients in 2022.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="contract_card">
+                        <div class="contract_card_logo">
+                            <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                            <h6>Robust Security</h6>
+                        </div>
+                        <p>
+                            Manual review, overview of all found issues, audit score & suggestions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="contract_card">
+                        <div class="contract_card_logo">
+                            <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                            <h6>Expertise</h6>
+                        </div>
+                        <p>
+                            Knowledgeable and certified auditors following security best practices.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="contract_card">
+                        <div class="contract_card_logo">
+                            <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                            <h6>Transparent Pricing</h6>
+                        </div>
+                        <p>
+                            With detailed breakdown & no hidden fees.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="contract_card">
+                        <div class="contract_card_logo">
+                            <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                            <h6>Recognition</h6>
+                        </div>
+                        <p>
+                            Successful wallet audit with Grade are recognised by CoinGecko, CMC, and CER.live.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                    <div class="contract_card">
+                        <div class="contract_card_logo">
+                            <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                            <h6>Reputation</h6>
+                        </div>
+                        <p>
+                            Grade is a trusted blockchain security auditor for 200+ partners.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

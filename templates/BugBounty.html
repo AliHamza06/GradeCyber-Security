@@ -1,0 +1,442 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}
+<title>GradeCyber | Bug Bounty</title>
+{% endblock title %}
+
+{% block content %}
+
+<!-- Header Section Start -->
+<div class="header_section">
+    <!-- navbar -->
+    {% include 'includes/header.html' %}
+    <!-- Home Section One -->
+    <div class="home_section_one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="header_title_div">
+                        <h1>Web3 Bug Bounty</h1>
+                        <p>
+                            Harness the full power of crowdsourced security with 20k+ ethical hackers curated by
+                            GradeProof.
+                        </p>
+                        <a href="#" class="joinBtnHref">
+                            <button class="joinBtn">
+                                <div>
+                                    <span>J</span>
+                                    <span>o</span>
+                                    <span>i</span>
+                                    <span>n</span>
+                                    <span class="space"> </span>
+                                    <span>t</span>
+                                    <span>h</span>
+                                    <span>e</span>
+                                    <span class="space"> </span>
+                                    <span>M</span>
+                                    <span>o</span>
+                                    <span>v</span>
+                                    <span>e</span>
+                                    <span>m</span>
+                                    <span>e</span>
+                                    <span>n</span>
+                                    <span>t</span>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-3">
+                    <div class="earthImgSection">
+                        <img src="{%static '/assets/images/clip.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadowDiv"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="home_section_four">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <!-- Logo and Heading 1 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{%static '/assets/images/marq2.svg' %}" alt="logo" class="marqLogo">
+                </div>
+
+                <!-- Logo and Heading 2 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{%static '/assets/images/marq1.svg' %}" alt="logo" class="marqLogo">
+                </div>
+
+                <!-- Logo and Heading 3 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{%static '/assets/images/marq3.svg' %}" alt="logo" class="marqLogo">
+                </div>
+
+                <!-- Logo and Heading 4 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{%static '/assets/images/marq4.svg' %}" alt="logo" class="marqLogo">
+                </div>
+
+                <!-- Logo and Heading 5 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{%static '/assets/images/marq5.svg' %}" alt="logo" class="marqLogo">
+                </div>
+
+                <!-- Logo and Heading 6 -->
+                <div class="logo_and_TxtDiv">
+                    <img src="{%static '/assets/images/marq6.svg' %}" alt="logo" class="marqLogo">
+                </div>
+                <div class="logo_and_TxtDiv">
+                    <img src="{%static '/assets/images/marq7.svg' %}" alt="logo" class="marqLogo">
+                </div>
+                <div class="logo_and_TxtDiv">
+                    <img src="{%static '/assets/images/marq8.svg' %}" alt="logo" class="marqLogo">
+                </div>
+                <div class="logo_and_TxtDiv">
+                    <img src="{%static '/assets/images/marq9.svg' %}" alt="logo" class="marqLogo last_marLogo">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="protocol_audit_section margin_row">
+        <div class="professional_request_div">
+            <h3 class="request_title" style="max-width: 827px;">
+                Receive reports on security flaws from ethical hackers before <span>cybercriminals</span> can
+                exploit them.
+            </h3>
+            <a href="#" class="public_audits_btn">
+                Request a quote
+                <i class="bi bi-chevron-right"></i>
+            </a>
+        </div>
+        <div class="row mt-sm-5 mt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{%static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Cost-effective security</h6>
+                    </div>
+                    <p style="min-height: auto; max-width: 100%;">
+                        You only have to pay for found bugs, and GradeProof ensures that all bugs are relevant.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{%static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Choose your scope</h6>
+                    </div>
+                    <p style="min-height: auto; max-width: 100%;">
+                        Bug bounty program follows your goals, and you select the scope, timeframe and rewards.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{%static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Crowd sourced protection</h6>
+                    </div>
+                    <p style="min-height: auto; max-width: 100%;">
+                        Bug Bounty gives access to thousands of external security experts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="smart_contract_section py-0 margin_row" style="background: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 mt-4">
+                <h1 class="need_project">Web3 projects suffer costly exploits without <span>adequate
+                        protection</span></h1>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                        <div class="price_card">
+                            <h6>$3.8B</h6>
+                            <p>
+                                stolen from crypto projects in 2022
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                        <div class="price_card">
+                            <h6>2x Damage</h6>
+                            <p>
+                                direct financial losses + token price drop
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                        <div class="price_card">
+                            <h6>82%</h6>
+                            <p>
+                                DeFi Protocols accounted for 82% of all hack losses in 2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="benifts_section margin_row">
+        <h4 class="essential_txt"><span>What projects</span> need Bug Bounty?</h4>
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{%static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Crypto Exchanges & Finance</h6>
+                    </div>
+                    <p>
+                        Startups and established projects in lending and borrowing, trading and prediction markets,
+                        token swaps, investments, crowdfunding, insurance, portfolios, and wallets.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{%static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Blockchain Ecosystems</h6>
+                    </div>
+                    <p>
+                        Enterprises developing blockchain and protocol technology and use cases for them.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{%static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Gaming</h6>
+                    </div>
+                    <p>
+                        Web3 projects creating virtual worlds for entertainment and earning.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{%static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Arts and Collectibles</h6>
+                    </div>
+                    <p>
+                        Apps and platforms for digital ownership in art and fashion, digital collectibles, and
+                        music.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="smart_contract_section margin_row">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 mt-4">
+                <h1 class="need_project text-center" style="max-width: 100%;"><span>When to run</span> Bug Bounty?
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-sm-5 mt-4">
+                <div class="needCard">
+                    <img src="{%static '/assets/images/icon13.svg' %}" alt="">
+                    <p>
+                        Public launch bug bounty enhances security, utilizing global talent.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-sm-5 mt-4">
+                <div class="needCard">
+                    <img src="{%static '/assets/images/icon14.svg' %}" alt="">
+                    <p>
+                        A pre-launch bug bounty secures your product, minimizing risk at launch.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-sm-5 mt-4">
+                <div class="needCard">
+                    <img src="{%static '/assets/images/icon15.svg' %}" alt="">
+                    <p class="lastP">
+                        Post-incident bug bounties restore trust, transforming weaknesses into strengths.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="benifts_section margin_row">
+        <h4 class="essential_txt" style="max-width: 820px;">Why choose <span>GRADE Cybersecurity</span> Proof for
+            Bug Bounty?</h4>
+        <div class="row mt-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{%static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Expertise</h6>
+                    </div>
+                    <p>
+                        10k+ found bugs, 70+ active programs, 20k+ experts. Avalanche, CoinGecko, IoTeX, Huobi, and
+                        Gate.io use GradeProof.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{%static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Pay-as-you-go</h6>
+                    </div>
+                    <p>
+                        Only pay for vetted bugs and triage services. Grade Proof handles all policy and payment
+                        transactions.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
+                <div class="contract_card">
+                    <div class="contract_card_logo">
+                        <img src="{%static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Top-Notch Triage</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        Receive only the most relevant reports as we check for duplicates and out-of-scope issues
+                        and identify their significance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="it_work_section margin_row">
+        <div class="row">
+            <div class="col-lg-7 col-md-6">
+                <div class="it_work_content">
+                    <h3>How does it <span>work?</span></h3>
+                    <p>
+                        On average, it takes from 5 to 10 business days to launch your program.
+                    </p>
+                    <a href="#" class="public_audits_btn">
+                        Request a quote
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 get_quote_col">
+                <div class="count_div">
+                    <div class="count_nmb">
+                        <li>1</li>
+                    </div>
+                    <div class="line_div"></div>
+                    <div class="count_nmb">
+                        <li>2</li>
+                    </div>
+                    <div class="line_div"></div>
+                    <div class="count_nmb">
+                        <li>3</li>
+                    </div>
+                    <div class="line_div"></div>
+                    <div class="count_nmb">
+                        <li>4</li>
+                    </div>
+                </div>
+                <div class="quote_text_div">
+                    <h6>Get a quote</h6>
+                    <h6>Bounty Policy</h6>
+                    <h6>Sign Contract</h6>
+                    <h6>Add funds</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="faq_section margin_row">
+        <div class="row">
+            <div class="col-lg-2 col-md-12">
+                <h1 class="faq_text">FAQ</h1>
+            </div>
+            <div class="col-lg-10 col-md-12 mt-lg-0 mt-sm-4 mt-3">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is the best way to start a bug bounty program?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <strong>Prepare:</strong> Reach out GradeProof, Choose a type of bug bounty,
+                                    Define the Scope, Set Rewards, Establish Triage, Craft the Policy, and Build the
+                                    Internal Process.
+                                </p>
+                                <p>
+                                    <strong>Launch:</strong> Start Small, Analyze, Exchange Feedback. Refine: Scale,
+                                    Improve.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                What are the validity requirements for Bug Bounty?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <strong>Prepare:</strong> Reach out GradeProof, Choose a type of bug bounty,
+                                    Define the Scope, Set Rewards, Establish Triage, Craft the Policy, and Build the
+                                    Internal Process.
+                                </p>
+                                <p>
+                                    <strong>Launch:</strong> Start Small, Analyze, Exchange Feedback. Refine: Scale,
+                                    Improve.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                What is GRADE Cybersecurity Proof?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <strong>Prepare:</strong> Reach out GradeProof, Choose a type of bug bounty,
+                                    Define the Scope, Set Rewards, Establish Triage, Craft the Policy, and Build the
+                                    Internal Process.
+                                </p>
+                                <p>
+                                    <strong>Launch:</strong> Start Small, Analyze, Exchange Feedback. Refine: Scale,
+                                    Improve.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

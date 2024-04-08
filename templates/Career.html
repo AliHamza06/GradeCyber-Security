@@ -1,0 +1,100 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}
+<title>GradeCyber | Company / career</title>
+{% endblock title %}
+
+{% block content %}
+
+<!-- Header Section Start -->
+<div class="header_section">
+    <!-- navbar -->
+    {% include 'includes/header.html' %}
+</div>
+<div class="container">
+    <div class="career_main">
+        <div class="social_icon_sec">
+            <a href="#">
+                <img src="{% static '/assets/images/Globalization.svg' %}" alt="">
+            </a>
+            <a href="#">
+                <img src="{% static '/assets/images/facebok.svg' %}" alt="">
+            </a>
+            <a href="#">
+                <img src="{% static '/assets/images/Linkedin.svg' %}" alt="">
+            </a>
+            <a href="#">
+                <img src="{% static '/assets/images/Twitter.svg' %}" alt="">
+            </a>
+        </div>
+        <div class="open_text career_content">
+            <h1>Open Positions</h1>
+            <h6>Where Passion for Web3 Security Thrives</h6>
+        </div>
+
+        <div class="career_content">
+            <h6 class="text-start">About Grade</h6>
+            <p>We started in 2017 and are all about cybersecurity, especially for blockchain. We don't like to talk
+                too much without getting to the point.</p>
+            <p>
+                We offer top-notch security solutions for Web3 businesses around the world. We're careful with our
+                actions and always ready to experiment with new ideas to stay ahead.
+            </p>
+            <p>
+                If we make a mistake, we admit it. We're confident but never rude and always stay truthful without
+                exaggerating.
+            </p>
+            <h4>Here's what makes us special:</h4>
+            <p>
+                <strong> Cutting-Edge Security:</strong> We work on staying ahead of cybersecurity threats with
+                research and development.
+            </p>
+            <p class="mt-0">
+                <strong> Excellence Matters:</strong> We focus on delivering high-quality protection for businesses.
+            </p>
+            <p class="mt-0">
+                <strong> Auditing Authority:</strong> We're known for setting high standards in smart contract
+                auditing.
+            </p>
+            <p class="mt-0">
+                <strong>Decentralization Advocates:</strong> We help make the digital world safer and more
+                decentralized.
+            </p>
+            <p class="mt-0">
+                <strong>Community Involvement:</strong> We're part of a big security-focused community that supports
+                various projects. 
+            </p>
+            <h4>
+                Let's team up and make the Web3 world safer together!
+            </h4>
+        </div>
+
+        <div class="row mt-sm-5 mt-4 row_reverse">
+            <div class="col-lg-8 col-md-7">
+                <div class="filter_card">
+                    <h6>Trainee Smart Contract Auditor</h6>
+                    <p>Services Full-time, Remote</p>
+                </div>
+                <div class="filter_card">
+                    <h6>Senior DevOps Engineer</h6>
+                    <p>RnD Full-time, Remote</p>
+                </div>
+                <div class="filter_card">
+                    <h6>On-chain Security Researcher</h6>
+                    <p>RnD Full-time, Remote</p>
+                </div>
+                <div class="filter_card">
+                    <h6>Middle/Senior Event Manager</h6>
+                    <p>Marketing Full-time, Remote</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5">
+                <div class="filter_create_card">
+                    <h6>Filter</h6>
+                    <img src="{% static '/assets/images/plus.svg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,123 @@
+{% load static %}
+<div class="navbar_section">
+    <nav class="navbar navbar-expand-lg p-0">
+        <div class="container">
+            <a class="navbar-brand navbar_brand" href="{% url 'home' %}">
+                <img src="{% static '/assets/images/logo.svg' %}" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navUl">
+                    <div class="sidebarLogo">
+                        <img src="{% static '/assets/images/logo.svg' %}" alt="">
+                        <button class="navbar-close-btn" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <li class="nav-item nav_item">
+                        <a class="nav-link navLink" aria-current="page">Services</a>
+                        <ul class="dropdown">
+                            <div class="dropList01">
+                                <a href="{% url 'SmartContractAudit' %}">Smart Contract Audit</a>
+                                <a href="{% url 'BlockchainProtocolSecurity' %}">Blockchain Protocol Audit</a>
+                                <a href="{% url 'PenetrationTesting' %}">Penetration Testing</a>
+                                <a href="{% url 'dAppAudit' %}">dApp Audit</a>
+                                <a href="{% url 'CryptoWalletAudit' %}">Crypto Wallet Audit</a>
+                                <a href="{% url 'Cross-ChainBridgeAudit' %}">Cross-Chain Bridge Audit</a>
+                                <a href="{% url 'BugBounty' %}">Bug Bounty</a>
+                                <a href="{% url 'ProofOfReservesAudit' %}">Proof of Reserves</a>
+                                <a href="{% url 'CCSSAudit' %}">CCSS Audit</a>
+                                <a href="{% url 'TokenomicsAuditDesign' %}">Tokenomics Audit & Design</a>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav_item">
+                        <a class="nav-link navLink" aria-current="page">Solutions</a>
+                        <ul class="dropdown solution_dropDown">
+                            <div class="dropList01">
+                                <div class="dropTitle">
+                                    <h6>Featured ecosystems:</h6>
+                                </div>
+                                <a href="{% url 'Solutions' %}">Ethereum (EVM)</a>
+                                <a href="{% url 'SolutionsBSC' %}">BSC</a>
+                                <a href="{% url 'SolutionsPolygon' %}">Polygon</a>
+                                <a href="{% url 'SolutionsNear' %}">Near</a>
+                                <a href="{% url 'SolutionsAvalanche' %}">Avalanche</a>
+                                <a href="{% url 'SolutionsFantom' %}">Fantom</a>
+                                <a href="{% url 'SolutionsAptosSmart' %}">Aptos</a>
+                                <a href="{% url 'SolutionsSui' %}">Sui</a>
+                                <a href="{% url 'SolutionsOptimismContract' %}">Optimism</a>
+
+                            </div>
+                            <div class="dropList01">
+                                <div class="dropTitle dropTitle2">
+                                    <h6></h6>
+                                </div>
+                                <a href="{% url 'SolutionsZkSync' %}">zkSync</a>
+                                <a href="{% url 'SolutionsArbitrum' %}" class="mb-0">Arbitrum</a>
+                                <a href="{% url 'SolutionsSolana' %}">Solana</a>
+                                <a href="{% url 'SolutionsPolkadot' %}">Polkadot</a>
+                                <a href="{% url 'SolutionsCosmos' %}">Cosmos</a>
+                                <a href="{% url 'SolutionsRadix' %}">Radix</a>
+                                <a href="{% url 'SolutionsLinea' %}">Linea</a>
+                                <a href="{% url 'SolutionsMetaMask' %}">MetaMask</a>
+                                <a href="{% url 'SolutionsOther' %}">Others</a>
+                            </div>
+                            <div class="dropList01">
+                                <div class="dropTitle">
+                                    <h6>By Languages:</h6>
+                                </div>
+                                <a href="{% url 'SolutionsSolidity' %}">Solidity</a>
+                                <a href="{% url 'SolutionsRust' %}">Rust</a>
+                                <a href="{% url 'SolutionsMove' %}">Move</a>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav_item">
+                        <a class="nav-link navLink" aria-current="page">Company</a>
+                        <ul class="dropdown">
+                            <div class="dropList01">
+                                <a href="{% url 'CompanyOurMission' %}">About</a>
+                                <a href="{% url 'CompanyAbout' %}">Partners</a>
+                                <a href="{% url 'Blogs' %}">Blog</a>
+                                <a href="{% url 'CompanyAboutProfit' %}">Invest</a>
+                                <a href="{% url 'Career' %}">Careers</a>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navBtnDiv">
+                    <a href="#">
+                        <button class="join_momentBtn">
+                            <div>
+                                <span>J</span>
+                                <span>o</span>
+                                <span>i</span>
+                                <span>n</span>
+                                <span class="space"> </span>
+                                <span>t</span>
+                                <span>h</span>
+                                <span>e</span>
+                                <span class="space"> </span>
+                                <span>M</span>
+                                <span>o</span>
+                                <span>v</span>
+                                <span>e</span>
+                                <span>m</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>t</span>
+                            </div>
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

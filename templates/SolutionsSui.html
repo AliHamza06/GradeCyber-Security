@@ -1,0 +1,801 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% block title %}
+<title>GradeCyber | Solutions / Sui</title>
+{% endblock title %}
+
+{% block content %}
+
+<!-- Header Section Start -->
+<div class="header_section">
+    <!-- navbar -->
+    {% include 'includes/header.html' %}
+    <!-- Home Section One -->
+    <div class="home_section_one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="header_title_div">
+                        <h1>Smart Contract Audit</h1>
+                        <p>
+                            Mitigate weaknesses in your smart contract and improve its functionality with a double
+                            line-to-line code analysis and a separate review by a lead auditor.
+                        </p>
+                        <a href="#" class="joinBtnHref">
+                            <button class="joinBtn">
+                                <div>
+                                    <span>J</span>
+                                    <span>o</span>
+                                    <span>i</span>
+                                    <span>n</span>
+                                    <span class="space"> </span>
+                                    <span>t</span>
+                                    <span>h</span>
+                                    <span>e</span>
+                                    <span class="space"> </span>
+                                    <span>M</span>
+                                    <span>o</span>
+                                    <span>v</span>
+                                    <span>e</span>
+                                    <span>m</span>
+                                    <span>e</span>
+                                    <span>n</span>
+                                    <span>t</span>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-3">
+                    <div class="earthImgSection">
+                        <img src="{% static '/assets/images/clip.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadowDiv"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="home_section_two">
+        <div class="table_header_div">
+            <h2>Most popular audits</h2>
+            <a href="#" class="public_audits_btn">
+                Explore Public Audits
+                <i class="bi bi-chevron-right"></i>
+            </a>
+        </div>
+        <div class="table_main_div">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="theadTr">
+                        <th scope="col" class="theadTr01">
+                            <p>NAME</p>
+                        </th>
+                        <th scope="col">
+                            <p>MARKET CAP</p>
+                        </th>
+                        <th scope="col">
+                            <p>PLATFORM</p>
+                        </th>
+                        <th scope="col" class="projectType">
+                            <p>PROJECT TYPE</p>
+                        </th>
+                        <th scope="col" class="theadTrLast">
+                            <p>LAST AUDIT</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tbodyTr">
+                        <td>
+                            <div class="coinDiv">
+                                <img src="{% static '/assets/images/Binance.png' %}" alt="" class="coinLogo">
+                                <p class="tableDesc">Binance</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="tableDesc">$46,718,200,000</p>
+                        </td>
+                        <td>
+                            <div class="platform_content">
+                                <p>ethereum</p>
+                                <p>binance smart chain</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="platform_content">
+                                <p>Avalanche</p>
+                                <p>Polygon</p>
+                                <p>+7</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="tableDesc">Feb 14, 2023</p>
+                        </td>
+                    </tr>
+                    <tr class="tbodyTr">
+                        <td>
+                            <div class="coinDiv">
+                                <img src="{% static '/assets/images/NEAR.png' %}" alt="" class="coinLogo">
+                                <p class="tableDesc">NEAR</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="tableDesc">$2,880,510,000</p>
+                        </td>
+                        <td>
+                            <div class="platform_content">
+                                <p>NEAR</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="platform_content">
+                                <p>L1 Protocol</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="tableDesc">Dec 10, 2023</p>
+                        </td>
+                    </tr>
+                    <tr class="tbodyTr">
+                        <td>
+                            <div class="coinDiv">
+                                <img src="{% static '/assets/images/WhiteBIT.png' %}" alt="" class="coinLogo">
+                                <p class="tableDesc">WhiteBIT</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="tableDesc">$929,197,000</p>
+                        </td>
+                        <td>
+                            <div class="platform_content">
+                                <p>tron</p>
+                                <p>ethereum</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="platform_content">
+                                <p>Centralized Exchange (CEX)</p>
+                                <p>Exchange-based Tokens</p>
+                                <p>+2</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="tableDesc">Dec 10, 2023</p>
+                        </td>
+                    </tr>
+                    <tr class="tbodyTr">
+                        <td>
+                            <div class="coinDiv">
+                                <img src="{% static '/assets/images/Huobi BTC.png' %}" alt="" class="coinLogo">
+                                <p class="tableDesc">Huobi BTC</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="tableDesc">$480,461,000</p>
+                        </td>
+                        <td>
+                            <div class="platform_content">
+                                <p>ethereum</p>
+                                <p>huobi token</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="platform_content">
+                                <p>Tokenized BTC</p>
+                                <p>Ethereum</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="tableDesc">Mar 18, 2022</p>
+                        </td>
+                    </tr>
+                    <tr class="tbodyTr">
+                        <td>
+                            <div class="coinDiv">
+                                <img src="{% static '/assets/images/NEAR.png' %}" alt="" class="coinLogo">
+                                <p class="tableDesc">1INCH</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="tableDesc">$461,994,000</p>
+                        </td>
+                        <td>
+                            <div class="platform_content">
+                                <p>tron</p>
+                                <p>ethereum</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="platform_content">
+                                <p>Centralized Exchange (CEX)</p>
+                                <p>Exchange-based Tokens</p>
+                                <p>+2</p>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="tableDesc">Nov 4, 2020</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="protocol_audit_section margin_row">
+        <div class="professional_request_div">
+            <h3 class="request_title" style="max-width: 727px;">
+                Mitigate risks and build trust with <span>smart contract auditing.</span>
+            </h3>
+            <a href="#" class="public_audits_btn">
+                Request a quote
+                <i class="bi bi-chevron-right"></i>
+            </a>
+        </div>
+        <div class="row mt-sm-5 mt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Increase audience trust</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        Smart contract code audit is your answer to the question “Is this project a secure choice?
+                        The incident rate among the projects audited by Grade is <1% </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Optimize your code</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        Get advice from the best smart contract audit firm to optimize your code. Apart from
+                        security flaws, our specialists detect bugs affecting product logic.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Avoid costly errors</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        Due to vulnerabilities in smart contracts, your project may lose money, reputation, and
+                        time. Users look at security when making an investment decision. Smart contract auditing
+                        services remove these vulnerabilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="smart_contract_section py-0 margin_row" style="background: none;">
+    <div class="container">
+        <h4 class="essential_txt" style="max-width: 1220px;">
+            Smart contract audit is <span>essential</span>
+        </h4>
+        <div class="row mt-sm-5 mt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <div class="price_card">
+                    <h6>$3.8B</h6>
+                    <p>
+                        stolen from crypto projects in 2021
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+                <div class="price_card">
+                    <h6>>50%</h6>
+                    <p>
+                        сode exploits and flash loan attacks behind the stolen value
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="smart_contract_section_two margin_row">
+        <h4 class="essential_txt">What <span>projects</span> need a smart contract audit?</h4>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-sm-5 mt-4">
+                <div class="contract_card contract_card02">
+                    <div class="contract_card_logo contract_card_logo02">
+                        <img src="{% static '/assets/images/icon3.svg' %}" alt="">
+                        <h6>Decentralized Exchanges</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-md-5 mt-4">
+                <div class="contract_card contract_card02">
+                    <div class="contract_card_logo contract_card_logo02">
+                        <img src="{% static '/assets/images/icon3.svg' %}" alt="">
+                        <h6>DeFi Platforms</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-4">
+                <div class="contract_card contract_card02">
+                    <div class="contract_card_logo contract_card_logo02">
+                        <img src="{% static '/assets/images/icon3.svg' %}" alt="">
+                        <h6>NFT Marketplaces</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-4">
+                <div class="contract_card contract_card02">
+                    <div class="contract_card_logo contract_card_logo02">
+                        <img src="{% static '/assets/images/icon3.svg' %}" alt="">
+                        <h6>Crypto Wallets</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-4">
+                <div class="contract_card contract_card02">
+                    <div class="contract_card_logo contract_card_logo02">
+                        <img src="{% static '/assets/images/icon3.svg' %}" alt="">
+                        <h6>Gaming & Virtual Worlds</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-4">
+                <div class="contract_card contract_card02 ever_app_card">
+                    <h6>
+                        ... and every app or service component using smart contracts!
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="smart_contract_section margin_row">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 mt-4">
+                <h1 class="need_project">
+                    When does a project need a <span>smart contract audit?</span>
+                </h1>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+                        <div class="needCard">
+                            <img src="{% static '/assets/images/icon13.svg' %}" alt="">
+                            <p>
+                                When preparing for product release
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+                        <div class="needCard">
+                            <img src="{% static '/assets/images/icon14.svg' %}" alt="">
+                            <p>
+                                After introducing major updates
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+                        <div class="needCard">
+                            <img src="{% static '/assets/images/icon15.svg' %}" alt="">
+                            <p>
+                                Upon noticing any malicious activities
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+                        <div class="needCard">
+                            <img src="{% static '/assets/images/icon16.svg' %}" alt="">
+                            <p>
+                                Before important listing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="blockchain_section margin_row">
+        <div class="table_header_div blogDiv blockchain_text_section">
+            <h2 class="blockchain_text">We audit smart contracts on these and other <span>blockchains</span></h2>
+            <a href="#" class="public_audits_btn">
+                Request a quote
+                <i class="bi bi-chevron-right"></i>
+            </a>
+        </div>
+        <img src="{% static '/assets/images/image 6.svg' %}" alt="" class="language_img">
+    </div>
+    <div class="benifts_section margin_row">
+        <h4 class="essential_txt" style="max-width: 820px;">
+            Benefits of smart contract audit by <span>GRADE Cyber Security</span>
+        </h4>
+        <div class="row mt-sm-5 mt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Time-Efficient Process</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        Audit duration is agreed upon with the customer during the negotiation phase. We start the
+                        audit immediately after a client provides us with all required documentation.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Transparent Pricing</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        The price of the audit is determined at the stage of negotiations. It is based only on the
+                        audit complexity and scope. There are no hidden fees and penalties.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Expertise</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        Grade is the European vendor that started auditing projects in 2017 and since then we have
+                        developed our own audit quality standards and methodology.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Community trust</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        Grade audits are integrated into CoinGecko, CoinMarketCap, and CER.live. Thus, it serves as
+                        an indicator of your reliability for users.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Human face</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        We are real individuals. You can find our team members on LinkedIn/Twitter as well as meet us
+                        during industry events.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Quality</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        Grade has a <1% incident rate among the audited projects and 0% of scam ventures. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="it_work_section margin_row">
+        <div class="row">
+            <div class="col-lg-7 col-md-6">
+                <div class="it_work_content">
+                    <h3>How does it <span>work?</span></h3>
+                    <p>
+                        The total Smart Contract Audit time takes from 5 to 15 business days.
+                    </p>
+                    <a href="#" class="public_audits_btn">
+                        Request a quote
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 get_quote_col">
+                <div class="count_div">
+                    <div class="count_nmb">
+                        <li>1</li>
+                    </div>
+                    <div class="line_div"></div>
+                    <div class="count_nmb">
+                        <li>2</li>
+                    </div>
+                    <div class="line_div"></div>
+                    <div class="count_nmb">
+                        <li>3</li>
+                    </div>
+                    <div class="line_div"></div>
+                    <div class="count_nmb">
+                        <li>4</li>
+                    </div>
+                </div>
+                <div class="quote_text_div">
+                    <h6>Get a quote</h6>
+                    <h6>Audit report</h6>
+                    <h6>Remediation check</h6>
+                    <h6>Certification and promotion</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="benifts_section margin_row">
+        <h4 class="essential_txt" style="max-width: 820px;">
+            <span>What will you get</span> after an audit?
+        </h4>
+        <div class="row mt-sm-5 mt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Certification</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        After the audit, you will be able to integrate the badge “Audited by Grade” into your website.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 mt-3">
+                <div class="contract_card testing_card">
+                    <div class="contract_card_logo">
+                        <img src="{% static '/assets/images/icon4.svg' %}" alt="">
+                        <h6>Promotion</h6>
+                    </div>
+                    <p style="max-width: 100%;">
+                        If your project meets Grade partnership requirements, we will offer you an extended service
+                        package including marketing activities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="it_work_section px-0 py-0 margin_row" style="border: none;">
+        <div class="row">
+            <div class="col-lg-5 col-md-6">
+                <div class="it_work_content" style="max-width: 439px;">
+                    <h3>
+                        What does smart contract audit <span>report include?</span>
+                    </h3>
+                    <div class="example_btn_group d-flex gap-3">
+                        <a href="#" class="public_audits_btn">
+                            View report example
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <a href="#" class="public_audits_btn" style="border: none;">
+                            View Our Methodology
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+                <div class="quote_text_div quote_text_div02">
+                    <h6>Classification of vulnerabilities depending on their severity.</h6>
+                    <h6>Step-by-step recommendations on how to fix all issues.</h6>
+                    <h6>
+                        Smart contract scoring according to 4 parameters: documentation quality, code quality,
+                        architecture quality, and security.
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="faq_section margin_row">
+        <div class="row">
+            <div class="col-lg-2 col-md-12">
+                <h1 class="faq_text">FAQ</h1>
+            </div>
+            <div class="col-lg-10 col-md-12 mt-lg-0 mt-sm-4 mt-3">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What are smart contracts?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Why do web3 projects rely on smart contracts?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                What is a smart contract audit?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                Why smart contract audit is important?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive">
+                                Can I conduct a smart contract audit myself?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                                aria-controls="collapseSix">
+                                How much does a smart contract audit cost?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                                aria-controls="collapseSeven">
+                                What benefits does a company get upon passing a contract audit?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false"
+                                aria-controls="collapseEight">
+                                Will I get recommendations on how to address detected issues after an audit?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false"
+                                aria-controls="collapseNine">
+                                What is the duration of a smart contract audit?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false"
+                                aria-controls="collapseTen">
+                                Do security engineers pay attention only to security vulnerabilities?
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button accordionButton collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false"
+                                aria-controls="collapseEleven">
+                                Why should I trust Grade?
+                            </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Smart contracts are digital contracts that automatically execute transactions
+                                    once predetermined conditions are met. Smart contracts are executed when certain
+                                    pre-programmed conditions are met.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
